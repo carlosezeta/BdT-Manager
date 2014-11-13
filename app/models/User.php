@@ -24,11 +24,12 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	protected $hidden = array('password', 'remember_token');
 
 	public static $rules = array(
-		'username' => 'required|unique'
+		'username' => 'required|unique:users'
 	);
 
 	public function getId()
 	{
 	  return $this->id;
 	}
+
 }

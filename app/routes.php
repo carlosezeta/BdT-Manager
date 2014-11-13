@@ -30,3 +30,5 @@ Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
 });
 
 Route::resource('categorias', 'CategoriaController');
+
+Route::resource('intercambios', 'IntercambiosController');

@@ -59,7 +59,12 @@
 				@if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
 					<li {{ (Request::is('users*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\UserController@index') }}">Usuarios</a></li>
 					<li {{ (Request::is('groups*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\GroupController@index') }}">Grupos</a></li>
+                    <li {{ (Request::is('categorias*') ? 'class="active"' : '') }}><a href="{{ URL::action('CategoriaController@index') }}">Categorías</a></li>
 				@endif
+                @if (Sentry::check())
+                    <li {{ (Request::is('ofertas*') ? 'class="active"' : '') }}><a href="{{ URL::action('AnunciosController@ofertas') }}">Ofertas</a></li>
+                    <li {{ (Request::is('demandas*') ? 'class="active"' : '') }}><a href="{{ URL::action('AnunciosController@demandas') }}">Demandas</a></li>
+                @endif
 			</ul>
 
 
