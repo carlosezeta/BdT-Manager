@@ -1,0 +1,705 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Session",
+				"Session::get	Retrieve an Item from the Session or Default Value"
+			],
+			[
+				"Auth",
+				"Auth-user	Auth-user"
+			],
+			[
+				"fore",
+				"foreach	blade-foreach"
+			],
+			[
+				"Schema",
+				"Schema-table	Schema-table"
+			],
+			[
+				"Sc",
+				"Schema-table	Schema-table"
+			],
+			[
+				"Input",
+				"Input-all	Input-all"
+			],
+			[
+				"Form",
+				"Form-text	Form-text"
+			],
+			[
+				"Redirec",
+				"Redirect-route	Redirect-route"
+			],
+			[
+				"Inpu",
+				"Input-get	Input-get"
+			],
+			[
+				"View",
+				"View-make	View-make"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/categorias/create.blade.php",
+			"settings":
+			{
+				"buffer_size": 1378,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/categorias/edit.blade.php",
+			"settings":
+			{
+				"buffer_size": 1546,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/categorias/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 1230,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/categorias/show.blade.php",
+			"settings":
+			{
+				"buffer_size": 1138,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lang/es/categorias.php",
+			"settings":
+			{
+				"buffer_size": 459,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/lang/es/site.php",
+			"settings":
+			{
+				"buffer_size": 274,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/CategoriaController.php",
+			"settings":
+			{
+				"buffer_size": 2530,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/AdminCategoriaController.php",
+			"settings":
+			{
+				"buffer_size": 2084,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 962,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"laravel view",
+				"Laravel Generate: View"
+			],
+			[
+				"laravel controller",
+				"Laravel Generate: Controller"
+			],
+			[
+				"Laravel controlle",
+				"Laravel Generate: Controller"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 594.0
+	},
+	"console":
+	{
+		"height": 160.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/routes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/app.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/User.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/CategoriaController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/DatabaseSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/layout.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/categorias/create.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/composer.json",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_12_212345_create_categoria_table.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/CategoriaTableSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Categoria.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/CategoriasTableSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/packages/rydurham/sentinel/layouts/default.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/hello.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/packages/rydurham/sentinel/config.php",
+		"/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/grid.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/packages/rydurham/sentinel/users/edit.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_10_235003_add_username_to_users.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_10_233723_add_hours_to_users.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/bootstrap/start.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/local/database.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/sidebar.blade.php",
+		"/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/less/variables.less",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/vendor/rydurham/sentinel/src/seeds/SentryUserSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt2/composer.json",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt2/bootstrap/start.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/composer.json",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/config/local/database.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/routes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/models/Intercambio.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/controllers/IntercambioController.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/intercambios/nuevo.blade.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/migrations/2014_11_09_215655_crear_intercambios.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/intercambios/correcto.blade.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/migrations/2014_11_10_000612_add_hours_to_users.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/UsersTableSeeder.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/layouts/default.blade.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/lang/es/site.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/controllers/AnuncioController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/controllers/CategoriaController.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/anuncios/ofertas.blade.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/controllers/IntercambioController.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/User.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/composer.json",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/storage/logs/log-apache2handler-2014-11-10.txt",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/config/app.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/views/site/intercambios/correcto.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/views/site/intercambios/nuevo.blade.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Intercambio.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/lang/es/anuncios.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/anuncios/ofertas2.blade.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Post.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Categoria.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Anuncio.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/AnunciosTableSeeder.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/PermissionsTableSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/views/anuncios/index.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/Anuncio.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/User.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/routes.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/DatabaseSeeder.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/UserTableSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/CategoriaTableSeeder.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/AnuncioTableSeeder.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_150334_añadir_user_a_anuncios.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_154617_crear_tabla_categorias.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_124215_crear_tabla_anuncios.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/Categoria.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_135657_crear_tabla_users.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/Anuncio.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/AnuncioTableSeeder.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/config/app.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/lang/en/validation.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/config/database.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/views/site/user/login.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/controllers/AnuncioController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/views/site/anuncios/ofertas2.blade.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/views/site/layouts/default.blade.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/lang/es/user/user.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_08_191420_crear_anuncios.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/AnunciosTableSeeder.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_08_195012_crear_categorias.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/CategoriasTableSeeder.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/controllers/AnuncioController.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/views/site/anuncios/ofertas.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/CategoriasTableSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/OfertaSeeder.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/config/local/mail.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/views/site/user/index.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/lang/es/site.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/lang/en/site.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/lang/es/site.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/lang/es/confide/confide.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/config/local/app.php",
+		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/bootstrap/start.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/CodeBright/app/routes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/app/views/form.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/app/controllers/ArticuloController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/app/views/cumpleanos.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/CodeBright/app/views/simple.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/CodeBright/app/filters.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/CodeBright/composer.json",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/app/filtros/cumpleanos.php",
+		"/C/Users/Carlos/Desktop/landings/landon/index.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/app/views/simple.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/public/.htaccess",
+		"/C/Users/Carlos/AppData/Roaming/Composer/vendor/bin/laravel",
+		"/C/Users/Carlos/AppData/Roaming/Composer/vendor/bin/laravel.bat",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/base-corporativa/app/controllers/HomeController.php",
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/base-corporativa/app/routes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/base-corporativa/app/controllers/InicioController.php",
+		"/D/Programas Instalados Nuevos/Middle Earth Shadow of Mordor/x64/codex.ini",
+		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/route-get.sublime-snippet",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/views/user/login.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/controllers/UserController.php",
+		"/D/Programas Instalados Nuevos/NBA 2K15/steam_api.ini",
+		"/C/Users/Carlos/Desktop/landings/landon/css/main.css",
+		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/Autoprefixer.sublime-settings",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/routes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/views/user/login.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/views/header.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/views/footer.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/public/css/layout.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/views/layout.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/config/auth.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/config/app.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/laravel/app/database/seeds/UserSeeder.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Categorium",
+			"categorium",
+			"categoria",
+			"Categorium",
+			"categorium",
+			"categoria",
+			"categorium",
+			"Categorium",
+			"categorium",
+			"Categorium",
+			"categorium",
+			"password",
+			"Password",
+			"password",
+			"Password",
+			"password",
+			"username",
+			"pdf",
+			">\n",
+			"center"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Categoria",
+			"categoria",
+			"categorias",
+			"Categoria",
+			"categoria",
+			"categorias"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/categorias/create.blade.php",
+					"settings":
+					{
+						"buffer_size": 1378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								602,
+								602
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/categorias/edit.blade.php",
+					"settings":
+					{
+						"buffer_size": 1546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/categorias/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 1230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								997,
+								997
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/categorias/show.blade.php",
+					"settings":
+					{
+						"buffer_size": 1138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1014,
+								1014
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/lang/es/categorias.php",
+					"settings":
+					{
+						"buffer_size": 459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/lang/es/site.php",
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/CategoriaController.php",
+					"settings":
+					{
+						"buffer_size": 2530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								689,
+								689
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/AdminCategoriaController.php",
+					"settings":
+					{
+						"buffer_size": 2084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 31.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/routes.php",
+					"settings":
+					{
+						"buffer_size": 962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								862,
+								862
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.77782107887,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"app",
+				"nuevo/app/config/app.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 349.0,
+	"status_bar_visible": true
+}
