@@ -13,6 +13,7 @@ class IntercambiosController extends BaseController {
         return View::make('intercambios.index')->with('intercambios', $intercambios);
 	}
 
+	
 	/**
 	 * Show the form for creating a new resource.
 	 *
