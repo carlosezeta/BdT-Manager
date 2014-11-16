@@ -22,6 +22,7 @@
 
     <!-- Custom CSS -->
     <link href="{{ asset('css/sb-admin-2.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{{ asset('font-awesome-4.1.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
@@ -110,13 +111,13 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-
+{{-- 
                         @if (Session::has('message'))
                             <div class="flash alert">
                                 <p>{{ Session::get('message') }}</p>
                             </div>
                         @endif
-                
+ --}}
                         @yield('content')
 
                     </div>

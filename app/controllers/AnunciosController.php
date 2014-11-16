@@ -32,11 +32,32 @@ class AnunciosController extends BaseController {
 		return View::make('anuncios.index')->with('anuncios', $anuncios);
 	}
 
+	public function ofertasCat($cat_slug)
+	{
+		$cat = Categoria::whereSlug($cat_slug)->get()->first();
+		$anuncios = Anuncio::whereTipo('O')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
+
+		return View::make('anuncios.index')->with('anuncios', $anuncios);
+	}
+
+
 	public function demandas()
 	{
 		$anuncios = Anuncio::whereTipo('D')->orderBy('created_at', 'desc')->get();
 		return View::make('anuncios.index')->with('anuncios', $anuncios);
 	}
+
+
+	public function demandasCat($cat_slug)
+	{
+		$cat = Categoria::whereSlug($cat_slug)->get()->first();
+		$anuncios = Anuncio::whereTipo('D')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
+
+		return View::make('anuncios.index')->with('anuncios', $anuncios);
+	}
+
+
+
 
 	/**
 	 * Show the form for creating a new resource.
@@ -45,7 +66,20 @@ class AnunciosController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('anuncios.create');
+		$categorias = Categoria::orderBy('nombre')->get();
+		return View::make('anuncios.create')->with('categorias', $categorias);
+	}
+
+	public function crearoferta()
+	{
+		$categorias = Categoria::orderBy('nombre')->get();
+		return View::make('anuncios.crearoferta')->with('categorias', $categorias);
+	}
+
+	public function creardemanda()
+	{
+		$categorias = Categoria::orderBy('nombre')->get();
+		return View::make('anuncios.creardemanda')->with('categorias', $categorias);
 	}
 
 	/**
@@ -56,7 +90,12 @@ class AnunciosController extends BaseController {
 	public function store()
 	{
 		$input = Input::all();
-		$validation = Validator::make($input, Anuncio::$rules);
+		$messages = array(
+		    'categoria_id.required' => Lang::get('anuncios.categoria_required'),
+		    'titulo.required' => Lang::get('anuncios.titulo_required'),
+		    'descripcion.required' => Lang::get('anuncios.descripcion_required')
+		);
+		$validation = Validator::make($input, Anuncio::$rules, $messages);
 
 		if ($validation->passes())
 		{
@@ -65,10 +104,16 @@ class AnunciosController extends BaseController {
 			return Redirect::route('anuncios.index');
 		}
 
-		return Redirect::route('anuncios.create')
-			->withInput()
-			->withErrors($validation)
-			->with('message', 'There were validation errors.');
+		if (Input::get('tipo') == 'O') {
+			return Redirect::route('publicar-oferta')
+				->withInput()
+				->withErrors($validation);
+		} elseif (Input::get('tipo') == 'D') {
+			return Redirect::route('publicar-demanda')
+				->withInput()
+				->withErrors($validation);
+		}
+
 	}
 
 	/**

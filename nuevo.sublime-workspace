@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"Request",
+				"Request-is	Request-is"
+			],
+			[
+				"Str",
+				"Str-slug	Str-slug"
+			],
+			[
 				"Session",
 				"Session::get	Retrieve an Item from the Session or Default Value"
 			],
@@ -64,18 +76,61 @@
 			}
 		},
 		{
-			"file": "app/routes.php",
+			"file": "app/controllers/AnunciosController.php",
 			"settings":
 			{
-				"buffer_size": 1182,
+				"buffer_size": 3839,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/AnunciosController.php",
+			"file": "app/views/intercambios/create.blade.php",
 			"settings":
 			{
-				"buffer_size": 2730,
+				"buffer_size": 1536,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/lang/es/anuncios.php",
+			"settings":
+			{
+				"buffer_size": 810,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@extends('site.layout')\n\n@section('content')\n\n<h1>All Anuncios</h1>\n\n<p>{{ link_to_route('anuncios.create', 'Add New Anuncio', null, array('class' => 'btn btn-lg btn-success')) }}</p>\n\n@if ($anuncios->count())\n	@foreach ($anuncios as $anuncio)\n		<div class=\"anuncio\">\n			<h3>{{{ $anuncio->titulo }}}</h3>\n			<p class=\"muted\">Publicado en \n				@if Request::is('/ofertas*')\n				{{ HTML::link('ofertas/'.$anuncio->categoria->slug, $anuncio->categoria->nombre) }}</p>\n			<p>{{{ $anuncio->descripcion }}}</p>\n		</div>\n	@endforeach\n\n	<table class=\"table table-striped\">\n		<thead>\n			<tr>\n				<th>User_id</th>\n				<th>Titulo</th>\n				<th>Categoria_id</th>\n				<th>Descripcion</th>\n				<th>Tipo</th>\n				<th>&nbsp;</th>\n			</tr>\n		</thead>\n\n		<tbody>\n			@foreach ($anuncios as $anuncio)\n				<tr>\n					<td>{{{ $anuncio->user_id }}}</td>\n					<td>{{{ $anuncio->titulo }}}</td>\n					<td>{{{ $anuncio->categoria_id }}}</td>\n					<td>{{{ $anuncio->descripcion }}}</td>\n					<td>{{{ $anuncio->tipo }}}</td>\n                    <td>\n                        {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('anuncios.destroy', $anuncio->id))) }}\n                            {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}\n                        {{ Form::close() }}\n                        {{ link_to_route('anuncios.edit', 'Edit', array($anuncio->id), array('class' => 'btn btn-info')) }}\n                    </td>\n				</tr>\n			@endforeach\n		</tbody>\n	</table>\n@else\n	There are no anuncios\n@endif\n\n@stop\n",
+			"file": "app/views/anuncios/index.blade.php",
+			"file_size": 1517,
+			"file_write_time": 130605699647930284,
+			"settings":
+			{
+				"buffer_size": 1553,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/style.css",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/Categoria.php",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 1391,
 				"line_ending": "Unix"
 			}
 		},
@@ -86,14 +141,42 @@
 				"buffer_size": 7054,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "app/views/anuncios/crearoferta.blade.php",
+			"settings":
+			{
+				"buffer_size": 2693,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/site/layout.blade.php",
+			"settings":
+			{
+				"buffer_size": 5766,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/anuncios/creardemanda.blade.php",
+			"settings":
+			{
+				"buffer_size": 2694,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 104.0,
 		"selected_items":
 		[
+			[
+				"generate migration",
+				"Laravel Generate: Migration"
+			],
 			[
 				"generate form",
 				"Laravel Generate: Form"
@@ -135,7 +218,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 528.0
+		"width": 558.0
 	},
 	"console":
 	{
@@ -152,6 +235,11 @@
 	},
 	"file_history":
 	[
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/vendor/composer/autoload_classmap.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_15_212542_add_slug_to_categorias.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Anuncio.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/CategoriaController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/createoferta.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/IntercambiosController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_14_000111_create_anuncios_table.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/routes.php",
@@ -170,7 +258,6 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/layout.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_08_191420_crear_anuncios.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/index.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/CategoriaController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/prueba.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/controllers/IntercambioController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/IntercambiosTableSeeder.php",
@@ -275,11 +362,7 @@
 		"/C/Users/Carlos/Desktop/landings/landon/index.html",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/app/views/simple.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/CodeBright/public/.htaccess",
-		"/C/Users/Carlos/AppData/Roaming/Composer/vendor/bin/laravel",
-		"/C/Users/Carlos/AppData/Roaming/Composer/vendor/bin/laravel.bat",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/base-corporativa/app/controllers/HomeController.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/base-corporativa/app/routes.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/base-corporativa/app/controllers/InicioController.php"
+		"/C/Users/Carlos/AppData/Roaming/Composer/vendor/bin/laravel"
 	],
 	"find":
 	{
@@ -343,7 +426,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -365,7 +448,9 @@
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -375,24 +460,54 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/routes.php",
+					"file": "app/controllers/AnunciosController.php",
 					"settings":
 					{
-						"buffer_size": 1182,
+						"buffer_size": 3839,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1182,
-								1182
+								697,
+								697
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/intercambios/create.blade.php",
+					"settings":
+					{
+						"buffer_size": 1536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1281,
+								1281
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -401,19 +516,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/controllers/AnunciosController.php",
+					"buffer": 3,
+					"file": "app/lang/es/anuncios.php",
 					"settings":
 					{
-						"buffer_size": 2730,
+						"buffer_size": 810,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								599,
-								599
+								810,
+								810
 							]
 						],
 						"settings":
@@ -421,6 +536,89 @@
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/anuncios/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 1553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/css/style.css",
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/Categoria.php",
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -435,7 +633,34 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 7,
+					"file": "app/routes.php",
+					"settings":
+					{
+						"buffer_size": 1391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								698,
+								698
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/AnunciosTableSeeder.php",
 					"settings":
 					{
@@ -459,6 +684,93 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/anuncios/crearoferta.blade.php",
+					"settings":
+					{
+						"buffer_size": 2693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								72
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/site/layout.blade.php",
+					"settings":
+					{
+						"buffer_size": 5766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/anuncios/creardemanda.blade.php",
+					"settings":
+					{
+						"buffer_size": 2694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2453,
+								2453
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1400.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -494,7 +806,7 @@
 		"cols":
 		[
 			0.0,
-			0.417307336917,
+			0.701839482047,
 			1.0
 		],
 		"rows":
@@ -518,6 +830,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"modelanunci",
+				"app/models/Anuncio.php"
+			],
 			[
 				"app",
 				"nuevo/app/config/app.php"

@@ -1,12 +1,25 @@
-@extends('layouts.scaffold')
+@extends('site.layout')
 
-@section('main')
+@section('content')
 
 <h1>All Anuncios</h1>
 
 <p>{{ link_to_route('anuncios.create', 'Add New Anuncio', null, array('class' => 'btn btn-lg btn-success')) }}</p>
 
 @if ($anuncios->count())
+	@foreach ($anuncios as $anuncio)
+		<div class="anuncio">
+			<h3>{{{ $anuncio->titulo }}}{{ (Sentry::check() ? (' <small>('. HTML::link('socis/'.$anuncio->user_id, $anuncio->user->username) .')</small>') : '') }}</h3>
+			<p class="muted">Publicado en {{ HTML::link( (Request::is('ofertas*') ? 'ofertas/' : 'demandas/') .$anuncio->categoria->slug, $anuncio->categoria->nombre) }}</p>
+			<p>{{{ $anuncio->descripcion }}}</p>
+		</div>
+	@endforeach
+
+
+
+
+
+
 	<table class="table table-striped">
 		<thead>
 			<tr>
@@ -37,6 +50,12 @@
 			@endforeach
 		</tbody>
 	</table>
+
+
+
+
+
+
 @else
 	There are no anuncios
 @endif

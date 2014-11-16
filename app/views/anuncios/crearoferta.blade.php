@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-md-10 col-md-offset-2">
-        <h1>{{ Lang::get('anuncios.publicar_anuncio') }}</h1>
+        <h1>{{ Lang::get('anuncios.publicar_oferta') }}</h1>
 
         @if ($errors->any())
         	<div class="alert alert-danger">
@@ -51,10 +51,10 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group hidden">
             {{ Form::label('tipo', Lang::get('anuncios.tipo'), array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::select('tipo', array('O'=>Lang::get('anuncios.oferta'), 'D'=>Lang::get('anuncios.demanda')), null, array('class'=>'form-control', 'placeholder'=>'Tipo')) }}
+              {{ Form::input('text', 'tipo', 'O') }}
             </div>
         </div>
 

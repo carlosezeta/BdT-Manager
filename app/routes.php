@@ -17,22 +17,34 @@
     return View::make('hello');
 }));
 
-/*
-Route::get('categorias/create', array('before' => 'Sentinel\inGroup:Admins',
- 
-            'uses' => 'CategoriaController@create'));
-
-Route::resource('categorias', 'CategoriaController',
-	array('except' => array('create'));
-*/
+// Rutas para Admins
 Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
     Route::resource('admin/categorias', 'AdminCategoriaController');
 });
 
+// Rutas para usuarios registrados
+Route::group(array('before' => 'Sentinel\auth'), function() {
+	Route::get('publicar-oferta', array('as'=>'publicar-oferta', 'uses' => 'AnunciosController@crearoferta'));
+	Route::get('publicar-demanda', array('as'=>'publicar-demanda', 'uses' => 'AnunciosController@creardemanda'));
+	/*Route::get('socis/{id}', function($id)
+	{
+		$user = User::find($id);
+		return View::make('users.show')->with('user', $user);
+	});
+	*/
+	Route::get('socis/{id}', 'SociController@show');
+});
+
+// Rutas de acceso público
 Route::resource('categorias', 'CategoriaController');
 
 Route::resource('intercambios', 'IntercambiosController');
 
 Route::resource('anuncios', 'AnunciosController');
 Route::get('ofertas', 'AnunciosController@ofertas');
+Route::get('ofertas/{cat_slug}', 'AnunciosController@ofertasCat');
+
 Route::get('demandas', 'AnunciosController@demandas');
+Route::get('demandas/{cat_slug}', 'AnunciosController@demandasCat');
+
+Route::resource('tallers', 'TallersController');

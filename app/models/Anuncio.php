@@ -10,4 +10,15 @@ class Anuncio extends Eloquent {
 		'descripcion' => 'required',
 		'tipo' => 'required'
 	);
+
+	public function categoria()
+	{
+	    return $this->belongsTo('Categoria', 'categoria_id');
+	}
+
+	public function user()
+	{
+	    return $this->belongsTo('User', 'user_id');
+	}
+
 }

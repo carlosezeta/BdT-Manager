@@ -25,8 +25,13 @@
         </div>
     </div>
 	
-	
-	{{ Form::text('descripcion', 'Prueba...', array('class' => 'hidden')) }}
+	<div class="form-group">
+        {{ Form::label('descripcion', 'Descripción:', array('class'=>'col-md-2 control-label')) }}
+        <div class="col-sm-10">
+        	{{ Form::text('descripcion', Input::old('descripcion'), array('class' => 'form-control', 'placeholder'=>'Descripción')) }}
+        </div>
+    </div>
+
     <div class="form-group">
 	    <label class="col-sm-2 control-label">&nbsp;</label>
 	    <div class="col-sm-10">

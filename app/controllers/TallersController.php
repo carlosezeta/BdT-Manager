@@ -1,19 +1,17 @@
 <?php
 
-class CategoriaController extends BaseController {
+class TallersController extends BaseController {
 
 	/**
-	 * Categoria Repository
+	 * Taller Repository
 	 *
-	 * @var Categoria
+	 * @var Taller
 	 */
-	protected $categoria;
+	protected $taller;
 
-	public function __construct(Categoria $categoria)
+	public function __construct(Taller $taller)
 	{
-		$this->categoria = $categoria;
-
-        //$this->beforeFilter('Sentinel\inGroup:Admins', array('on' => 'create'));
+		$this->taller = $taller;
 	}
 
 	/**
@@ -23,9 +21,9 @@ class CategoriaController extends BaseController {
 	 */
 	public function index()
 	{
-		$categorias = $this->categoria->all();
+		$tallers = $this->taller->all();
 
-		return View::make('categorias.index', compact('categorias'));
+		return View::make('tallers.index', compact('tallers'));
 	}
 
 	/**
@@ -35,7 +33,7 @@ class CategoriaController extends BaseController {
 	 */
 	public function create()
 	{
-        return View::make('categorias.create');
+		return View::make('tallers.create');
 	}
 
 	/**
@@ -46,16 +44,16 @@ class CategoriaController extends BaseController {
 	public function store()
 	{
 		$input = Input::all();
-		$validation = Validator::make($input, Categoria::$rules);
+		$validation = Validator::make($input, Taller::$rules);
 
 		if ($validation->passes())
 		{
-			$this->categoria->create($input);
+			$this->taller->create($input);
 
-			return Redirect::route('categorias.index');
+			return Redirect::route('tallers.index');
 		}
 
-		return Redirect::route('categorias.create')
+		return Redirect::route('tallers.create')
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -69,9 +67,9 @@ class CategoriaController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$categoria = $this->categoria->findOrFail($id);
+		$taller = $this->taller->findOrFail($id);
 
-		return View::make('categorias.show', compact('categoria'));
+		return View::make('tallers.show', compact('taller'));
 	}
 
 	/**
@@ -82,14 +80,14 @@ class CategoriaController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		$categoria = $this->categoria->find($id);
+		$taller = $this->taller->find($id);
 
-		if (is_null($categoria))
+		if (is_null($taller))
 		{
-			return Redirect::route('categorias.index');
+			return Redirect::route('tallers.index');
 		}
 
-		return View::make('categorias.edit', compact('categoria'));
+		return View::make('tallers.edit', compact('taller'));
 	}
 
 	/**
@@ -101,17 +99,17 @@ class CategoriaController extends BaseController {
 	public function update($id)
 	{
 		$input = array_except(Input::all(), '_method');
-		$validation = Validator::make($input, Categoria::$rules);
+		$validation = Validator::make($input, Taller::$rules);
 
 		if ($validation->passes())
 		{
-			$categoria = $this->categoria->find($id);
-			$categoria->update($input);
+			$taller = $this->taller->find($id);
+			$taller->update($input);
 
-			return Redirect::route('categorias.show', $id);
+			return Redirect::route('tallers.show', $id);
 		}
 
-		return Redirect::route('categorias.edit', $id)
+		return Redirect::route('tallers.edit', $id)
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -125,10 +123,9 @@ class CategoriaController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		$this->categoria->find($id)->delete();
+		$this->taller->find($id)->delete();
 
-		return Redirect::route('categorias.index');
+		return Redirect::route('tallers.index');
 	}
-
 
 }
