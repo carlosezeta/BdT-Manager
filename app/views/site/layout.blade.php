@@ -145,7 +145,10 @@
     <script src="{{ asset('js/sb-admin-2.js') }}"></script>
 
 	<!-- Thanks to Zizaco for the Restfulizer script.  http://zizaco.net  -->
-    <script src="{{ asset('packages/rydurham/sentinel/js/restfulizer.js') }}"></script> 
+    <script src="{{ asset('packages/rydurham/sentinel/js/restfulizer.js') }}"></script>
+
+    @section('scripts')
+    @show
 
 </body>
 

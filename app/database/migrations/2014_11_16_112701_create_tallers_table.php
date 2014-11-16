@@ -18,11 +18,14 @@ class CreateTallersTable extends Migration {
 			$table->text('descripcion');
 			$table->boolean('esgrupo');
 			$table->string('textorepeticion');
-			$table->datetime('fecha');
+			$table->date('fecha');
+			$table->time('hora_inicio');
+			$table->time('hora_fin');
 			$table->string('lugar');
 			$table->string('img');
-			$table->integer('tallerita_id')->unsigned();
+			$table->integer('tallerista_id')->unsigned();
 			$table->integer('plazas');
+			$table->boolean('publicado');
 			$table->timestamps();
 		});
 	}

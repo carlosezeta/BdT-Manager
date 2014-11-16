@@ -9,7 +9,7 @@
 	color: #999;
 }
 
-.anuncio>h3 {
+.anuncio>h3, .taller>h3 {
 	margin-bottom: 0px;
 	line-height: 1;
 }

@@ -16,7 +16,7 @@
 				<th>Fecha</th>
 				<th>Lugar</th>
 				<th>Img</th>
-				<th>Tallerita_id</th>
+				<th>Tallerista_id</th>
 				<th>Plazas</th>
 		</tr>
 	</thead>
@@ -30,7 +30,7 @@
 					<td>{{{ $taller->fecha }}}</td>
 					<td>{{{ $taller->lugar }}}</td>
 					<td>{{{ $taller->img }}}</td>
-					<td>{{{ $taller->tallerita_id }}}</td>
+					<td>{{{ $taller->tallerista_id }}}</td>
 					<td>{{{ $taller->plazas }}}</td>
                     <td>
                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('tallers.destroy', $taller->id))) }}

@@ -68,9 +68,9 @@
         </div>
 
         <div class="form-group">
-            {{ Form::label('tallerita_id', 'Tallerita_id:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('tallerista_id', 'Tallerista_id:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::input('number', 'tallerita_id', Input::old('tallerita_id'), array('class'=>'form-control')) }}
+              {{ Form::input('number', 'tallerista_id', Input::old('tallerista_id'), array('class'=>'form-control')) }}
             </div>
         </div>
 

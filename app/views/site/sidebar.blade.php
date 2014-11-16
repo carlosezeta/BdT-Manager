@@ -12,10 +12,11 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
-                            <a href="/"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
-                        </li>
-                        
+                        <li><a href="/"><i class="fa fa-home fa-fw"></i> {{ Lang::get('site.inicio') }}</a></li>
+                        <li><a href="ofertas"><i class="fa fa-share-alt fa-fw"></i> {{ Lang::get('site.ofertas') }}</a></li>
+                        <li><a href="demandas"><i class="fa fa-life-ring fa-fw"></i> {{ Lang::get('site.demandas') }}</a></li>
+                        <li><a href="tallers"><i class="fa fa-users fa-fw"></i> {{ Lang::get('site.talleres') }}</a></li>
+
                         @section('sidebarContent')
                         @show
 

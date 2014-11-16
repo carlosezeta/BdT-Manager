@@ -48,3 +48,5 @@ Route::get('demandas', 'AnunciosController@demandas');
 Route::get('demandas/{cat_slug}', 'AnunciosController@demandasCat');
 
 Route::resource('tallers', 'TallersController');
+
+Route::resource('propuestas', 'PropuestasController');

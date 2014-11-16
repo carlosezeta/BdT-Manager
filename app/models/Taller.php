@@ -11,7 +11,12 @@ class Taller extends Eloquent {
 		'fecha' => 'required',
 		'lugar' => 'required',
 		'img' => 'required',
-		'tallerita_id' => 'required',
+		'tallerista_id' => 'required',
 		'plazas' => 'required'
 	);
+
+	public function tallerista()
+	{
+	    return $this->belongsTo('User', 'tallerista_id');
+	}
 }
