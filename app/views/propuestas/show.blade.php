@@ -4,7 +4,7 @@
 
 <h1>Show Propuestas</h1>
 
-<p>{{ link_to_route('propuestass.index', 'Return to All propuestass', null, array('class'=>'btn btn-lg btn-primary')) }}</p>
+<p>{{ link_to_route('propuestas.index', 'Return to All propuestas', null, array('class'=>'btn btn-lg btn-primary')) }}</p>
 
 <table class="table table-striped">
 	<thead>
@@ -37,10 +37,10 @@
 					<td>{{{ $propuestas->oyentes }}}</td>
 					<td>{{{ $propuestas->img }}}</td>
                     <td>
-                        {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('propuestass.destroy', $propuestas->id))) }}
+                        {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('propuestas.destroy', $propuestas->id))) }}
                             {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
                         {{ Form::close() }}
-                        {{ link_to_route('propuestass.edit', 'Edit', array($propuestas->id), array('class' => 'btn btn-info')) }}
+                        {{ link_to_route('propuestas.edit', 'Edit', array($propuestas->id), array('class' => 'btn btn-info')) }}
                     </td>
 		</tr>
 	</tbody>

@@ -1,8 +1,22 @@
+a, a:visited {
+	color: #6E3B02;
+}
+a:hover, a:focus {
+	color: #9A5303;
+}
+
+a.btn-success {
+	color: white;
+}
 
 .anuncio {
-	border-bottom: 1px solid #e6e6e6;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	border: 1px solid #e6e6e6;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/*background-color: white;*/
 }
 
 .muted, .muted>a {
@@ -12,4 +26,51 @@
 .anuncio>h3, .taller>h3 {
 	margin-bottom: 0px;
 	line-height: 1;
+}
+
+.anuncio>div>h3>span.fecha{
+	font-size: 14px;
+}
+
+.panel-body p {
+	margin-bottom: 0px;
+}
+.panel-body>p.muted {
+	margin-bottom: 5px;
+}
+.botones-anuncio {
+
+}
+
+.c-list {
+    padding: 0px;
+    min-height: 44px;
+}
+.anuncio .titulo {
+    display: inline-block;
+    font-size: 1.7em;
+    padding: 5px 15px;
+}
+ul.c-controls {
+    list-style: none;
+    margin-top: -39px;
+    margin-right: 5px;
+    min-height: 44px;
+}
+
+ul.c-controls li {
+    float: left;
+    margin-left: 5px;
+}
+
+
+
+.name {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.c-info {
+    padding: 5px 10px;
+    font-size: 1.25em;
 }

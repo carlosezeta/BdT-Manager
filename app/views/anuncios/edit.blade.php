@@ -1,10 +1,10 @@
-@extends('layouts.scaffold')
+@extends('site.layout')
 
-@section('main')
+@section('content')
 
 <div class="row">
     <div class="col-md-10 col-md-offset-2">
-        <h1>Edit Anuncio</h1>
+        <h1>{{ Lang::get('anuncios.editar_anuncio') }}</h1>
 
         @if ($errors->any())
         	<div class="alert alert-danger">
@@ -18,38 +18,36 @@
 
 {{ Form::model($anuncio, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('anuncios.update', $anuncio->id))) }}
 
+
         <div class="form-group">
-            {{ Form::label('user_id', 'User_id:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('titulo', Lang::get('anuncios.titulo'), array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::input('number', 'user_id', Input::old('user_id'), array('class'=>'form-control')) }}
+              {{ Form::text('titulo', Input::old('titulo'), array('class'=>'form-control', 'placeholder'=> Lang::get('anuncios.titulo'))) }}
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('titulo', 'Titulo:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('categoria_id', Lang::get('anuncios.categoria'), array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('titulo', Input::old('titulo'), array('class'=>'form-control', 'placeholder'=>'Titulo')) }}
+                <select class="form-control" id="categoria_id" name="categoria_id">
+                    @foreach($categorias as $categoria)
+                        <option value="{{ $categoria->id }}">{{ $categoria->nombre }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('categoria_id', 'Categoria_id:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('descripcion', Lang::get('anuncios.descripcion'), array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::input('number', 'categoria_id', Input::old('categoria_id'), array('class'=>'form-control')) }}
+              {{ Form::textarea('descripcion', Input::old('descripcion'), array('class'=>'form-control', 'placeholder'=>Lang::get('anuncios.descripcion'))) }}
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('descripcion', 'Descripcion:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('tipo', Lang::get('anuncios.tipo'), array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::textarea('descripcion', Input::old('descripcion'), array('class'=>'form-control', 'placeholder'=>'Descripcion')) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('tipo', 'Tipo:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::text('tipo', Input::old('tipo'), array('class'=>'form-control', 'placeholder'=>'Tipo')) }}
+              {{ Form::select('tipo', array('O'=>Lang::get('anuncios.oferta'), 'D'=>Lang::get('anuncios.demanda')), null, array('class'=>'form-control', 'placeholder'=>'Tipo')) }}
             </div>
         </div>
 
@@ -57,8 +55,8 @@
 <div class="form-group">
     <label class="col-sm-2 control-label">&nbsp;</label>
     <div class="col-sm-10">
-      {{ Form::submit('Update', array('class' => 'btn btn-lg btn-primary')) }}
-      {{ link_to_route('anuncios.show', 'Cancel', $anuncio->id, array('class' => 'btn btn-lg btn-default')) }}
+      {{ Form::submit(Lang::get('site.actualizar'), array('class' => 'btn btn-lg btn-primary')) }}
+      {{ link_to_route('anuncios.show', Lang::get('site.cancelar'), $anuncio->id, array('class' => 'btn btn-lg btn-default')) }}
     </div>
 </div>
 

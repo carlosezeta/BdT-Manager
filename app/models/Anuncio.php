@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+
 class Anuncio extends Eloquent {
 	protected $guarded = array();
 
@@ -11,6 +13,14 @@ class Anuncio extends Eloquent {
 		'tipo' => 'required'
 	);
 
+	public function getCreatedAtAttribute($attr) {        
+        return Carbon::parse($attr)->format('d/m/Y');
+    }
+
+    public function getUpdatedAtAttribute($attr) {        
+        return Carbon::parse($attr)->format('d/m/Y');
+    }
+
 	public function categoria()
 	{
 	    return $this->belongsTo('Categoria', 'categoria_id');
@@ -20,5 +30,7 @@ class Anuncio extends Eloquent {
 	{
 	    return $this->belongsTo('User', 'user_id');
 	}
+
+
 
 }

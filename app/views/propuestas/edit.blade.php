@@ -16,7 +16,7 @@
     </div>
 </div>
 
-{{ Form::model($propuestas, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('propuestass.update', $propuestas->id))) }}
+{{ Form::model($propuestas, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('propuestas.update', $propuestas->id))) }}
 
         <div class="form-group">
             {{ Form::label('tallerista_id', 'Tallerista_id:', array('class'=>'col-md-2 control-label')) }}
@@ -100,7 +100,7 @@
     <label class="col-sm-2 control-label">&nbsp;</label>
     <div class="col-sm-10">
       {{ Form::submit('Update', array('class' => 'btn btn-lg btn-primary')) }}
-      {{ link_to_route('propuestass.show', 'Cancel', $propuestas->id, array('class' => 'btn btn-lg btn-default')) }}
+      {{ link_to_route('propuestas.show', 'Cancel', $propuestas->id, array('class' => 'btn btn-lg btn-default')) }}
     </div>
 </div>
 

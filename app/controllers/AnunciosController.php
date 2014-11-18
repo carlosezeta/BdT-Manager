@@ -21,29 +21,38 @@ class AnunciosController extends BaseController {
 	 */
 	public function index()
 	{
-		$anuncios = $this->anuncio->all();
+		$anuncios = Anuncio::orderBy('categoria_id')
+						   ->orderBy('titulo')
+						   ->get();
 
 		return View::make('anuncios.index', compact('anuncios'));
 	}
 
 	public function ofertas()
 	{
-		$anuncios = Anuncio::whereTipo('O')->orderBy('created_at', 'desc')->get();
+		//$anuncios = Anuncio::whereTipo('O')->join('categorias as cat', 'cat.id', '=', 'anuncios.categoria_id')->orderBy('cat.nombre')->get();
+		$anuncios = Anuncio::whereTipo('O')->orderBy('categoria_id')->orderBy('titulo')->get();
+		//$anuncios = Anuncio::whereTipo('O')->->orderBy('categorias.nombre')->get();
+		
 		return View::make('anuncios.index')->with('anuncios', $anuncios);
 	}
 
 	public function ofertasCat($cat_slug)
 	{
 		$cat = Categoria::whereSlug($cat_slug)->get()->first();
-		$anuncios = Anuncio::whereTipo('O')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
+		if (empty($cat)) {
+			Redirect::to('ofertas');
+		} else {
+			$anuncios = Anuncio::whereTipo('O')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
 
-		return View::make('anuncios.index')->with('anuncios', $anuncios);
+			return View::make('anuncios.index')->with('anuncios', $anuncios);
+		}
 	}
 
 
 	public function demandas()
 	{
-		$anuncios = Anuncio::whereTipo('D')->orderBy('created_at', 'desc')->get();
+		$anuncios = Anuncio::whereTipo('D')->orderBy('categoria_id')->orderBy('titulo')->get();
 		return View::make('anuncios.index')->with('anuncios', $anuncios);
 	}
 
@@ -51,9 +60,13 @@ class AnunciosController extends BaseController {
 	public function demandasCat($cat_slug)
 	{
 		$cat = Categoria::whereSlug($cat_slug)->get()->first();
-		$anuncios = Anuncio::whereTipo('D')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
+		if (empty($cat)) {
+			Redirect::to('ofertas');
+		} else {
+			$anuncios = Anuncio::whereTipo('D')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
 
-		return View::make('anuncios.index')->with('anuncios', $anuncios);
+			return View::make('anuncios.index')->with('anuncios', $anuncios);
+		}
 	}
 
 
@@ -137,6 +150,7 @@ class AnunciosController extends BaseController {
 	 */
 	public function edit($id)
 	{
+		$categorias = Categoria::orderBy('nombre')->get();
 		$anuncio = $this->anuncio->find($id);
 
 		if (is_null($anuncio))
@@ -144,7 +158,7 @@ class AnunciosController extends BaseController {
 			return Redirect::route('anuncios.index');
 		}
 
-		return View::make('anuncios.edit', compact('anuncio'));
+		return View::make('anuncios.edit', compact('anuncio', 'categorias'));
 	}
 
 	/**

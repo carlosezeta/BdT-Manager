@@ -16,7 +16,7 @@
     </div>
 </div>
 
-{{ Form::open(array('route' => 'propuesta.store', 'class' => 'form-horizontal')) }}
+{{ Form::open(array('route' => 'propuestas.store', 'class' => 'form-horizontal')) }}
 
         <div class="form-group">
             {{ Form::label('tallerista_id', 'Tallerista_id:', array('class'=>'col-md-2 control-label')) }}
