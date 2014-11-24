@@ -17,7 +17,8 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+		$noticias = Noticia::orderBy('created_at', 'desc')->paginate(2);
+		return View::make('hello')->with('noticias', $noticias);
 	}
 
 }

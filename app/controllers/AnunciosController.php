@@ -28,12 +28,36 @@ class AnunciosController extends BaseController {
 		return View::make('anuncios.index', compact('anuncios'));
 	}
 
-	public function ofertas()
+	public function ofertas($dias = null)
 	{
-		//$anuncios = Anuncio::whereTipo('O')->join('categorias as cat', 'cat.id', '=', 'anuncios.categoria_id')->orderBy('cat.nombre')->get();
-		$anuncios = Anuncio::whereTipo('O')->orderBy('categoria_id')->orderBy('titulo')->get();
-		//$anuncios = Anuncio::whereTipo('O')->->orderBy('categorias.nombre')->get();
-		
+		if (!is_null($dias)){
+			$anuncios = Anuncio::whereTipo('O')->lastXDays($dias)->orderBy('categoria_id')->orderBy('titulo')->get();
+		} else {
+			$anuncios = Anuncio::whereTipo('O')->orderBy('categoria_id')->orderBy('titulo')->get();
+		}
+
+		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos');
+	}
+
+	public function ofertasUsuario($usuario = null)
+	{
+		if (!is_null($usuario)) {
+			$userId = User::findByUsernameOrFail($usuario)->getId();
+			$anuncios = Anuncio::whereTipo('O')->whereUserId($userId)->orderBy('categoria_id')->orderBy('titulo')->get();
+		} else {
+			$anuncios = Anuncio::whereTipo('O')->orderBy('categoria_id')->orderBy('titulo')->get();
+		}
+		return View::make('anuncios.index')->with('anuncios', $anuncios);
+	}
+
+	public function demandasUsuario($usuario = null)
+	{
+		if (!is_null($usuario)) {
+			$userId = User::findByUsernameOrFail($usuario)->getId();
+			$anuncios = Anuncio::whereTipo('D')->whereUserId($userId)->orderBy('categoria_id')->orderBy('titulo')->get();
+		} else {
+			$anuncios = Anuncio::whereTipo('D')->orderBy('categoria_id')->orderBy('titulo')->get();
+		}
 		return View::make('anuncios.index')->with('anuncios', $anuncios);
 	}
 
@@ -50,9 +74,13 @@ class AnunciosController extends BaseController {
 	}
 
 
-	public function demandas()
+	public function demandas($dias = null)
 	{
-		$anuncios = Anuncio::whereTipo('D')->orderBy('categoria_id')->orderBy('titulo')->get();
+		if (!is_null($dias)){
+			$anuncios = Anuncio::whereTipo('D')->lastXDays($dias)->orderBy('categoria_id')->orderBy('titulo')->get();
+		} else {
+			$anuncios = Anuncio::whereTipo('D')->orderBy('categoria_id')->orderBy('titulo')->get();
+		}
 		return View::make('anuncios.index')->with('anuncios', $anuncios);
 	}
 

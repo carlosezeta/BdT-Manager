@@ -4,7 +4,11 @@
 
 <h1>All Tallers</h1>
 
-<p>{{ link_to_route('tallers.create', 'Add New Taller', null, array('class' => 'btn btn-lg btn-success')) }}</p>
+@if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
+	<p><a href="{{ URL::route('tallers.create') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('talleres.publicar') }}</a></p>
+@else
+	<p><a href="{{ URL::route('propuestas.create') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('talleres.proponer') }}</a></p>
+@endif
 
 @if ($tallers->count())
 
@@ -20,7 +24,7 @@
 
 
 @else
-	There are no tallers
+	{{ Lang::get('site.no-hay-nada') }}
 @endif
 
 @stop

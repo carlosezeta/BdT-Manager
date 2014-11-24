@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Form-",
+				"Form-textarea	Form-textarea"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"Auth",
+				"Auth-id	Auth-id"
+			],
+			[
 				"Redi",
 				"Redirect-to	Redirect-to"
 			],
@@ -38,10 +50,6 @@
 			[
 				"Session",
 				"Session::get	Retrieve an Item from the Session or Default Value"
-			],
-			[
-				"Auth",
-				"Auth-user	Auth-user"
 			],
 			[
 				"fore",
@@ -84,57 +92,7 @@
 	"buffers":
 	[
 		{
-			"file": "app/database/migrations/2014_11_16_233633_create_propuestas_table.php",
-			"settings":
-			{
-				"buffer_size": 862,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 4521 files for \"ropuestass\" (case sensitive)\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\storage\\debugbar\\b5a56eeddaa01a65993588e35d0ed0b1.json:\n    1: {\"__meta\":{\"id\":\"b5a56eeddaa01a65993588e35d0ed0b1\",\"datetime\":\"2014-11-17 16:28:00\",\"utime\":1416241680.1481,\"method\":\"GET\",\"uri\":\"\\/propuestas\",\"ip\":\"127.0.0.1\"},\"php\":{\"version\":\"5.4.24\"},\"messages\":{\"count\":1,\"messages\":[{\"message\":\"[16:28:00] LOG.error: exception 'InvalidArgumentException' with message 'Route [propuestass.create] not defined.' in C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\UrlGenerator.php:231\\nStack trace:\\n#0 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Html\\\\HtmlBuilder.php(171): Illuminate\\\\Routing\\\\UrlGenerator->route('propuestass.cre...', NULL)\\n#1 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Support\\\\helpers.php(606): Illuminate\\\\Html\\\\HtmlBuilder->linkRoute('propuestass.cre...', 'Add New Propues...', NULL, Array)\\n#2 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\app\\\\storage\\\\views\\\\3bf3e93756a77c8edfd9e8299ca82d77(5): link_to_route('propuestass.cre...', 'Add New Propues...', NULL, Array)\\n#3 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\Engines\\\\PhpEngine.php(37): include('C:\\\\Program File...')\\n#4 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\Engines\\\\CompilerEngine.php(56): Illuminate\\\\View\\\\Engines\\\\PhpEngine->evaluatePath('C:\\\\Program File...', Array)\\n#5 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\View.php(134): Illuminate\\\\View\\\\Engines\\\\CompilerEngine->get('C:\\\\Program File...', Array)\\n#6 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\View.php(102): Illuminate\\\\View\\\\View->getContents()\\n#7 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\View.php(76): Illuminate\\\\View\\\\View->renderContents()\\n#8 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Response.php(43): Illuminate\\\\View\\\\View->render()\\n#9 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\symfony\\\\http-foundation\\\\Symfony\\\\Component\\\\HttpFoundation\\\\Response.php(202): Illuminate\\\\Http\\\\Response->setContent(Object(Illuminate\\\\View\\\\View))\\n#10 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php(1496): Symfony\\\\Component\\\\HttpFoundation\\\\Response->__construct(Object(Illuminate\\\\View\\\\View))\\n#11 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php(1031): Illuminate\\\\Routing\\\\Router->prepareResponse(Object(Illuminate\\\\Http\\\\Request), Object(Illuminate\\\\View\\\\View))\\n#12 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php(996): Illuminate\\\\Routing\\\\Router->dispatchToRoute(Object(Illuminate\\\\Http\\\\Request))\\n#13 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php(775): Illuminate\\\\Routing\\\\Router->dispatch(Object(Illuminate\\\\Http\\\\Request))\\n#14 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php(745): Illuminate\\\\Foundation\\\\Application->dispatch(Object(Illuminate\\\\Http\\\\Request))\\n#15 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\barryvdh\\\\laravel-debugbar\\\\src\\\\Middleware\\\\Stack.php(34): Illuminate\\\\Foundation\\\\Application->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#16 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Session\\\\Middleware.php(72): Barryvdh\\\\Debugbar\\\\Middleware\\\\Stack->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#17 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Cookie\\\\Queue.php(47): Illuminate\\\\Session\\\\Middleware->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#18 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Cookie\\\\Guard.php(51): Illuminate\\\\Cookie\\\\Queue->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#19 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\stack\\\\builder\\\\src\\\\Stack\\\\StackedHttpKernel.php(23): Illuminate\\\\Cookie\\\\Guard->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#20 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php(641): Stack\\\\StackedHttpKernel->handle(Object(Illuminate\\\\Http\\\\Request))\\n#21 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\public\\\\index.php(49): Illuminate\\\\Foundation\\\\Application->run()\\n#22 {main}\\n\\nNext exception 'ErrorException' with message 'Route [propuestass.create] not defined. (View: C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\app\\\\views\\\\propuestas\\\\index.blade.php)' in C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\UrlGenerator.php:231\\nStack trace:\\n#0 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\Engines\\\\PhpEngine.php(41): Illuminate\\\\View\\\\Engines\\\\CompilerEngine->handleViewException(Object(InvalidArgumentException), 1)\\n#1 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\Engines\\\\CompilerEngine.php(56): Illuminate\\\\View\\\\Engines\\\\PhpEngine->evaluatePath('C:\\\\Program File...', Array)\\n#2 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\View.php(134): Illuminate\\\\View\\\\Engines\\\\CompilerEngine->get('C:\\\\Program File...', Array)\\n#3 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\View.php(102): Illuminate\\\\View\\\\View->getContents()\\n#4 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\View\\\\View.php(76): Illuminate\\\\View\\\\View->renderContents()\\n#5 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Response.php(43): Illuminate\\\\View\\\\View->render()\\n#6 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\symfony\\\\http-foundation\\\\Symfony\\\\Component\\\\HttpFoundation\\\\Response.php(202): Illuminate\\\\Http\\\\Response->setContent(Object(Illuminate\\\\View\\\\View))\\n#7 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php(1496): Symfony\\\\Component\\\\HttpFoundation\\\\Response->__construct(Object(Illuminate\\\\View\\\\View))\\n#8 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php(1031): Illuminate\\\\Routing\\\\Router->prepareResponse(Object(Illuminate\\\\Http\\\\Request), Object(Illuminate\\\\View\\\\View))\\n#9 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php(996): Illuminate\\\\Routing\\\\Router->dispatchToRoute(Object(Illuminate\\\\Http\\\\Request))\\n#10 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php(775): Illuminate\\\\Routing\\\\Router->dispatch(Object(Illuminate\\\\Http\\\\Request))\\n#11 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php(745): Illuminate\\\\Foundation\\\\Application->dispatch(Object(Illuminate\\\\Http\\\\Request))\\n#12 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\barryvdh\\\\laravel-debugbar\\\\src\\\\Middleware\\\\Stack.php(34): Illuminate\\\\Foundation\\\\Application->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#13 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Session\\\\Middleware.php(72): Barryvdh\\\\Debugbar\\\\Middleware\\\\Stack->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#14 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Cookie\\\\Queue.php(47): Illuminate\\\\Session\\\\Middleware->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#15 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Cookie\\\\Guard.php(51): Illuminate\\\\Cookie\\\\Queue->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#16 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\stack\\\\builder\\\\src\\\\Stack\\\\StackedHttpKernel.php(23): Illuminate\\\\Cookie\\\\Guard->handle(Object(Illuminate\\\\Http\\\\Request), 1, true)\\n#17 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php(641): Stack\\\\StackedHttpKernel->handle(Object(Illuminate\\\\Http\\\\Request))\\n#18 C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\public\\\\index.php(49): Illuminate\\\\Foundation\\\\Application->run()\\n#19 {main}\",\"is_string\":false,\"label\":\"error\",\"time\":1416241680.0261,\"collector\":\"log\"}]},\"time\":{\"start\":1416241679.424,\"end\":1416241680.1481,\"duration\":0.72410488128662,\"duration_str\":\"724.1ms\",\"measures\":[{\"label\":\"Booting\",\"start\":1416241679.4441,\"relative_start\":0.020065069198608,\"end\":1416241679.9091,\"relative_end\":1416241679.9091,\"duration\":0.46502685546875,\"duration_str\":\"465.03ms\",\"params\":[],\"collector\":null},{\"label\":\"Application\",\"start\":1416241679.9121,\"relative_start\":0.48809194564819,\"end\":1416241679.9121,\"relative_end\":1416241679.9121,\"duration\":0,\"duration_str\":\"0\\u03bcs\",\"params\":[],\"collector\":null},{\"label\":\"After application\",\"start\":1416241679.9131,\"relative_start\":0.48909187316895,\"end\":1416241680.1481,\"relative_end\":0,\"duration\":0.23501300811768,\"duration_str\":\"235.01ms\",\"params\":[],\"collector\":null}]},\"memory\":{\"peak_usage\":8912896,\"peak_usage_str\":\"8.5MB\"},\"exceptions\":{\"count\":2,\"exceptions\":[{\"type\":\"ErrorException\",\"message\":\"Route [propuestass.create] not defined. (View: C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\app\\\\views\\\\propuestas\\\\index.blade.php)\",\"code\":0,\"file\":\"C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\UrlGenerator.php\",\"line\":231,\"surrounding_lines\":[\"\\t\\t\\treturn $this->toRoute($route, $parameters, $absolute);\\r\\n\",\"\\t\\t}\\r\\n\",\"\\r\\n\",\"\\t\\tthrow new InvalidArgumentException(\\\"Route [{$name}] not defined.\\\");\\r\\n\",\"\\t}\\r\\n\",\"\\r\\n\",\"\\t\\/**\\r\\n\"]},{\"type\":\"InvalidArgumentException\",\"message\":\"Route [propuestass.create] not defined.\",\"code\":0,\"file\":\"C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\data\\\\localweb\\\\projects\\\\nuevo\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\UrlGenerator.php\",\"line\":231,\"surrounding_lines\":[\"\\t\\t\\treturn $this->toRoute($route, $parameters, $absolute);\\r\\n\",\"\\t\\t}\\r\\n\",\"\\r\\n\",\"\\t\\tthrow new InvalidArgumentException(\\\"Route [{$name}] not defined.\\\");\\r\\n\",\"\\t}\\r\\n\",\"\\r\\n\",\"\\t\\/**\\r\\n\"]}]},\"views\":{\"nb_templates\":1,\"templates\":[{\"name\":\"propuestas.index\",\"param_count\":1,\"params\":[\"propuestas\"],\"type\":\"php\"}]},\"route\":{\"host\":\"-\",\"uri\":\"GET propuestas\",\"name\":\"propuestas.index\",\"action\":\"PropuestasController@index\",\"before\":\"-\",\"after\":\"-\"},\"queries\":{\"nb_statements\":1,\"nb_failed_statements\":0,\"accumulated_duration\":0.002,\"accumulated_duration_str\":\"2ms\",\"statements\":[{\"sql\":\"select * from `propuestas`\",\"params\":{\"hints\":\"Use <code>SELECT *<\\/code> only if you need all columns from table<br \\/>The <code>SELECT<\\/code> statement has no <code>WHERE<\\/code> clause and could examine many more rows than intended\"},\"duration\":0.002,\"duration_str\":\"2ms\",\"stmt_id\":null}]},\"swiftmailer_mails\":{\"count\":0,\"mails\":[]},\"request\":{\"format\":\"html\",\"content_type\":\"text\\/html\",\"status_text\":\"Internal Server Error\",\"status_code\":\"integer 500\",\"request_query\":\"array()\",\"request_request\":\"array()\",\"request_headers\":\"array(8) [\\n    'host' => array(1) [\\n        string (5) \\\"nuevo\\\"\\n    ]\\n    'connection' => array(1) [\\n        string (10) \\\"keep-alive\\\"\\n    ]\\n    'cache-control' => array(1) [\\n        string (9) \\\"max-age=0\\\"\\n    ]\\n    'accept' => array(1) [\\n        string (74) \\\"text\\/html,application\\/xhtml+xml,application\\/xml;q=0.9,image\\/webp,*\\/*;q=0.8\\\"\\n    ]\\n    'user-agent' => array(1) [\\n        string (109) \\\"Mozilla\\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/38.0.2125.111 Safari\\/537.36\\\"\\n    ]\\n    'accept-encoding' => array(1) [\\n        string (17) \\\"gzip,deflate,sdch\\\"\\n    ]\\n    'accept-language' => array(1) [\\n        string (29) \\\"es,gl;q=0.8,ca;q=0.6,en;q=0.4\\\"\\n    ]\\n    'cookie' => array(1) [\\n        string (294) \\\"laravel_session=eyJpdiI6IkQyajJYNTNYNGZXcGZ1S1BGdXpEcnc9PSIsInZhbHVlIjoiVE40NG05a0x5eUExTWVqWG9wNU9jQW1JUXh4dGFPeXpUYlwvMHFycFhXV0orZU1DU25pVW8rVVdqRTNaekV0bjkrWk1HUTFCK1hhM2lmenFYYUtOM3hRPT0iLCJtYWMiOiJmNTEyOTRmMmU2YjIzYzk1YmViYmI5YWE2OGZmMjczZWQ1NTE5OTNlMWI3NWZkM2E1MTc5NWU2NjJiMjEwMjJlIn0%3D\\\"\\n    ]\\n]\",\"request_server\":\"array(39) [\\n    'REDIRECT_TMP' => string (37) \\\"C:\\/PROGRA~2\\/EASYPH~2.1VC\\/binaries\\/tmp\\\"\\n    'REDIRECT_STATUS' => string (3) \\\"200\\\"\\n    'TMP' => string (37) \\\"C:\\/PROGRA~2\\/EASYPH~2.1VC\\/binaries\\/tmp\\\"\\n    'HTTP_HOST' => string (5) \\\"nuevo\\\"\\n    'HTTP_CONNECTION' => string (10) \\\"keep-alive\\\"\\n    'HTTP_CACHE_CONTROL' => string (9) \\\"max-age=0\\\"\\n    'HTTP_ACCEPT' => string (74) \\\"text\\/html,application\\/xhtml+xml,application\\/xml;q=0.9,image\\/webp,*\\/*;q=0.8\\\"\\n    'HTTP_USER_AGENT' => string (109) \\\"Mozilla\\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/38.0.2125.111 Safari\\/537.36\\\"\\n    'HTTP_ACCEPT_ENCODING' => string (17) \\\"gzip,deflate,sdch\\\"\\n    'HTTP_ACCEPT_LANGUAGE' => string (29) \\\"es,gl;q=0.8,ca;q=0.6,en;q=0.4\\\"\\n    'HTTP_COOKIE' => string (294) \\\"laravel_session=eyJpdiI6IkQyajJYNTNYNGZXcGZ1S1BGdXpEcnc9PSIsInZhbHVlIjoiVE40NG05a0x5eUExTWVqWG9wNU9jQW1JUXh4dGFPeXpUYlwvMHFycFhXV0orZU1DU25pVW8rVVdqRTNaekV0bjkrWk1HUTFCK1hhM2lmenFYYUtOM3hRPT0iLCJtYWMiOiJmNTEyOTRmMmU2YjIzYzk1YmViYmI5YWE2OGZmMjczZWQ1NTE5OTNlMWI3NWZkM2E1MTc5NWU2NjJiMjEwMjJlIn0%3D\\\"\\n    'PATH' => string (642) \\\"C:\\\\Program Files (x86)\\\\NVIDIA Corporation\\\\PhysX\\\\Common;C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC9\\\\binaries\\\\php\\\\php_runningversion;C:\\\\Program Files (x86)\\\\EasyPHP-DevServer-14.1VC11\\\\binaries\\\\php\\\\php_runningversion;C:\\\\Windows\\\\system32;C:\\\\Windows;C:\\\\Windows\\\\System32\\\\Wbem;C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;D:\\\\Programas Instalados Nuevos\\\\MATLAB\\\\R2012b\\\\runtime\\\\win64;D:\\\\Programas Instalados Nuevos\\\\MATLAB\\\\R2012b\\\\bin;C:\\\\ProgramData\\\\ComposerSetup\\\\bin;C:\\\\Users\\\\Carlos\\\\AppData\\\\Roaming\\\\Composer\\\\vendor\\\\bin;C:\\\\Program Files (x86)\\\\Git\\\\cmd;C:\\\\PROGRA~2\\\\EASYPH~2.1VC\\\\Apache\\\\bin;C:\\\\PROGRA~2\\\\EASYPH~2.1VC\\\\PHP\\\"\\n    'SystemRoot' => string (10) \\\"C:\\\\Windows\\\"\\n    'COMSPEC' => string (27) \\\"C:\\\\Windows\\\\system32\\\\cmd.exe\\\"\\n    'PATHEXT' => string (53) \\\".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC\\\"\\n    'WINDIR' => string (10) \\\"C:\\\\Windows\\\"\\n    'SERVER_SIGNATURE' => string (0) \\\"\\\"\\n    'SERVER_SOFTWARE' => string (31) \\\"Apache\\/2.4.7 (Win32) PHP\\/5.4.24\\\"\\n    'SERVER_NAME' => string (5) \\\"nuevo\\\"\\n    'SERVER_ADDR' => string (9) \\\"127.0.0.1\\\"\\n    'SERVER_PORT' => string (2) \\\"80\\\"\\n    'REMOTE_ADDR' => string (9) \\\"127.0.0.1\\\"\\n    'DOCUMENT_ROOT' => string (84) \\\"C:\\/Program Files (x86)\\/EasyPHP-DevServer-14.1VC9\\/data\\/localweb\\/projects\\/nuevo\\/public\\\"\\n    'REQUEST_SCHEME' => string (4) \\\"http\\\"\\n    'CONTEXT_PREFIX' => string (0) \\\"\\\"\\n    'CONTEXT_DOCUMENT_ROOT' => string (84) \\\"C:\\/Program Files (x86)\\/EasyPHP-DevServer-14.1VC9\\/data\\/localweb\\/projects\\/nuevo\\/public\\\"\\n    'SERVER_ADMIN' => string (15) \\\"admin@127.0.0.1\\\"\\n    'SCRIPT_FILENAME' => string (94) \\\"C:\\/Program Files (x86)\\/EasyPHP-DevServer-14.1VC9\\/data\\/localweb\\/projects\\/nuevo\\/public\\/index.php\\\"\\n    'REMOTE_PORT' => string (5) \\\"49725\\\"\\n    'REDIRECT_URL' => string (11) \\\"\\/propuestas\\\"\\n    'GATEWAY_INTERFACE' => string (7) \\\"CGI\\/1.1\\\"\\n    'SERVER_PROTOCOL' => string (8) \\\"HTTP\\/1.1\\\"\\n    'REQUEST_METHOD' => string (3) \\\"GET\\\"\\n    'QUERY_STRING' => string (0) \\\"\\\"\\n    'REQUEST_URI' => string (11) \\\"\\/propuestas\\\"\\n    'SCRIPT_NAME' => string (10) \\\"\\/index.php\\\"\\n    'PHP_SELF' => string (10) \\\"\\/index.php\\\"\\n    'REQUEST_TIME_FLOAT' => float 1416241679.424\\n    'REQUEST_TIME' => integer 1416241679\\n]\",\"request_cookies\":\"array(1) [\\n    'laravel_session' => string (40) \\\"c4b33766f3fabc45921ac7f78a1e519a44b3f8c2\\\"\\n]\",\"response_headers\":\"array(2) [\\n    'cache-control' => array(1) [\\n        string (8) \\\"no-cache\\\"\\n    ]\\n    'date' => array(1) [\\n        string (29) \\\"Mon, 17 Nov 2014 16:28:00 GMT\\\"\\n    ]\\n]\",\"path_info\":\"\\/propuestas\",\"session_attributes\":\"array(3) [\\n    '_token' => string (40) \\\"Wbasiml2RZJn6NO5DyjwFSEx6TcbNxmW3jfEMguN\\\"\\n    'PHPDEBUGBAR_STACK_DATA' => array()\\n    'flash' => array(2) [\\n        'old' => array()\\n        'new' => array()\\n    ]\\n]\"}}\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\storage\\logs\\laravel.log:\n 5123  #26 C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\public\\index.php(49): Illuminate\\Foundation\\Application->run()\n 5124  #27 {main} [] []\n 5125: [2014-11-17 16:28:00] local.ERROR: exception 'InvalidArgumentException' with message 'Route [propuestass.create] not defined.' in C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:231\n 5126  Stack trace:\n 5127: #0 C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor\\laravel\\framework\\src\\Illuminate\\Html\\HtmlBuilder.php(171): Illuminate\\Routing\\UrlGenerator->route('propuestass.cre...', NULL)\n 5128: #1 C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(606): Illuminate\\Html\\HtmlBuilder->linkRoute('propuestass.cre...', 'Add New Propues...', NULL, Array)\n 5129: #2 C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\storage\\views\\3bf3e93756a77c8edfd9e8299ca82d77(5): link_to_route('propuestass.cre...', 'Add New Propues...', NULL, Array)\n 5130  #3 C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(37): include('C:\\Program File...')\n 5131  #4 C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(56): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\Program File...', Array)\n ....\n 5149  #22 {main}\n 5150  \n 5151: Next exception 'ErrorException' with message 'Route [propuestass.create] not defined. (View: C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\propuestas\\index.blade.php)' in C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:231\n 5152  Stack trace:\n 5153  #0 C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(InvalidArgumentException), 1)\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\storage\\views\\3bf3e93756a77c8edfd9e8299ca82d77:\n    1  <?php $__env->startSection('main'); ?>\n    2  \n    3: <h1>All Propuestass</h1>\n    4  \n    5: <p><?php echo link_to_route('propuestass.create', 'Add New Propuestas', null, array('class' => 'btn btn-lg btn-success')); ?></p>\n    6  \n    7: <?php if($propuestass->count()): ?>\n    8  	<table class=\"table table-striped\">\n    9  		<thead>\n   ..\n   25  \n   26  		<tbody>\n   27: 			<?php foreach($propuestass as $propuestas): ?>\n   28  				<tr>\n   29  					<td><?php echo e($propuestas->tallerista_id); ?></td>\n   ..\n   39  					<td><?php echo e($propuestas->img); ?></td>\n   40                      <td>\n   41:                         <?php echo Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('propuestass.destroy', $propuestas->id))); ?>\n   42  \n   43                              <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>\n   ..\n   45                          <?php echo Form::close(); ?>\n   46  \n   47:                         <?php echo link_to_route('propuestass.edit', 'Edit', array($propuestas->id), array('class' => 'btn btn-info')); ?>\n   48  \n   49                      </td>\n   ..\n   53  	</table>\n   54  <?php else: ?>\n   55: 	There are no propuestass\n   56  <?php endif; ?>\n   57  \n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\propuestas\\edit.blade.php:\n   17  </div>\n   18  \n   19: {{ Form::model($propuestas, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('propuestass.update', $propuestas->id))) }}\n   20  \n   21          <div class=\"form-group\">\n   ..\n  101      <div class=\"col-sm-10\">\n  102        {{ Form::submit('Update', array('class' => 'btn btn-lg btn-primary')) }}\n  103:       {{ link_to_route('propuestass.show', 'Cancel', $propuestas->id, array('class' => 'btn btn-lg btn-default')) }}\n  104      </div>\n  105  </div>\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\propuestas\\index.blade.php:\n    3  @section('main')\n    4  \n    5: <h1>All Propuestass</h1>\n    6  \n    7: <p>{{ link_to_route('propuestass.create', 'Add New Propuestas', null, array('class' => 'btn btn-lg btn-success')) }}</p>\n    8  \n    9: @if ($propuestass->count())\n   10  	<table class=\"table table-striped\">\n   11  		<thead>\n   ..\n   27  \n   28  		<tbody>\n   29: 			@foreach ($propuestass as $propuestas)\n   30  				<tr>\n   31  					<td>{{{ $propuestas->tallerista_id }}}</td>\n   ..\n   41  					<td>{{{ $propuestas->img }}}</td>\n   42                      <td>\n   43:                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('propuestass.destroy', $propuestas->id))) }}\n   44                              {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}\n   45                          {{ Form::close() }}\n   46:                         {{ link_to_route('propuestass.edit', 'Edit', array($propuestas->id), array('class' => 'btn btn-info')) }}\n   47                      </td>\n   48  				</tr>\n   ..\n   51  	</table>\n   52  @else\n   53: 	There are no propuestass\n   54  @endif\n   55  \n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\propuestas\\show.blade.php:\n    5  <h1>Show Propuestas</h1>\n    6  \n    7: <p>{{ link_to_route('propuestass.index', 'Return to All propuestass', null, array('class'=>'btn btn-lg btn-primary')) }}</p>\n    8  \n    9  <table class=\"table table-striped\">\n   ..\n   38  					<td>{{{ $propuestas->img }}}</td>\n   39                      <td>\n   40:                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('propuestass.destroy', $propuestas->id))) }}\n   41                              {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}\n   42                          {{ Form::close() }}\n   43:                         {{ link_to_route('propuestass.edit', 'Edit', array($propuestas->id), array('class' => 'btn btn-info')) }}\n   44                      </td>\n   45  		</tr>\n\n32 matches across 6 files\n",
-			"settings":
-			{
-				"buffer_size": 25411,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "app/views/propuestas/edit.blade.php",
-			"settings":
-			{
-				"buffer_size": 4475,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/propuestas/index.blade.php",
-			"settings":
-			{
-				"buffer_size": 1721,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/propuestas/show.blade.php",
-			"settings":
-			{
-				"buffer_size": 1569,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/anuncios/index.blade.php",
-			"settings":
-			{
-				"buffer_size": 2700,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/Anuncio.php",
+			"file": "app/controllers/HomeController.php",
 			"settings":
 			{
 				"buffer_size": 683,
@@ -142,107 +100,101 @@
 			}
 		},
 		{
-			"file": "app/config/app.php",
+			"file": "app/views/site/layout.blade.php",
 			"settings":
 			{
-				"buffer_size": 8009,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/AnunciosController.php",
-			"settings":
-			{
-				"buffer_size": 4599,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/css/sb-admin-2.css",
-			"settings":
-			{
-				"buffer_size": 5530,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/database/migrations/2014_11_17_214913_rename_descripcion_from_categorias.php",
-			"settings":
-			{
-				"buffer_size": 566,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/database/migrations/2014_11_17_220528_add_softdelete_to_anuncios.php",
-			"settings":
-			{
-				"buffer_size": 512,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/anuncios/create.blade.php",
-			"settings":
-			{
-				"buffer_size": 2814,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/PropuestasController.php",
-			"settings":
-			{
-				"buffer_size": 2441,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/Propuesta.php",
-			"settings":
-			{
-				"buffer_size": 441,
+				"buffer_size": 6992,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/propuestas/create.blade.php",
+			"file": "app/views/tallers/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 4302,
+				"buffer_size": 906,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/css/style.css",
+			"file": "app/lang/es/talleres.php",
 			"settings":
 			{
-				"buffer_size": 982,
+				"buffer_size": 291,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/anuncios/edit.blade.php",
+			"file": "app/views/tallers/create.blade.php",
 			"settings":
 			{
-				"buffer_size": 2592,
+				"buffer_size": 6745,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/lang/es/anuncios.php",
+			"file": "app/views/tallers/edit.blade.php",
 			"settings":
 			{
-				"buffer_size": 850,
+				"buffer_size": 3697,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/TallersController.php",
+			"settings":
+			{
+				"buffer_size": 4290,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/intercambios/create.blade.php",
+			"settings":
+			{
+				"buffer_size": 1915,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/site/sidebar.blade.php",
+			"file": "app/controllers/IntercambiosController.php",
 			"settings":
 			{
-				"buffer_size": 1542,
-				"line_ending": "Windows"
+				"buffer_size": 2743,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/socis/show.blade.php",
+			"settings":
+			{
+				"buffer_size": 8678,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/User.php",
+			"settings":
+			{
+				"buffer_size": 1433,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/SociController.php",
+			"settings":
+			{
+				"buffer_size": 1642,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 56 files for \"Sentry::check(\" (case sensitive)\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\anuncios\\index.blade.php:\n   50  			<div class=\"panel panel-default anuncio\">\n   51  				<div class=\"panel-heading c-list\">\n   52: 					<span class=\"titulo\">{{{ $anuncio->titulo }}}{{ (Sentry::check() ? (' <small>('. HTML::link('socis/'.$anuncio->user_id, $anuncio->user->username) .')</small>') : '') }}</span>\n   53  \n   54: 					@if (Sentry::check())\n   55  						@if ((Sentry::getUser()->hasAccess('admin')) || $anuncio->user_id == Sentry::getUser()->id)\n   56  						<span class=\"pull-right c-controls btn-group\">\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\packages\\rydurham\\sentinel\\layouts\\default.blade.php:\n   51  	        <div class=\"collapse navbar-collapse\">\n   52  	          <ul class=\"nav navbar-nav\">\n   53: 				@if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))\n   54  					<li {{ (Request::is('users*') ? 'class=\"active\"' : '') }}><a href=\"{{ URL::action('Sentinel\\UserController@index') }}\">Users</a></li>\n   55  					<li {{ (Request::is('groups*') ? 'class=\"active\"' : '') }}><a href=\"{{ URL::action('Sentinel\\GroupController@index') }}\">Groups</a></li>\n   ..\n   57  	          </ul>\n   58  	          <ul class=\"nav navbar-nav navbar-right\">\n   59: 	            @if (Sentry::check())\n   60  				<li {{ (Request::is('users/show/' . Session::get('userId')) ? 'class=\"active\"' : '') }}><a href=\"/users/{{ Session::get('userId') }}\">{{ Session::get('email') }}</a></li>\n   61  				<li><a href=\"{{ URL::route('Sentinel\\logout') }}\">Logout</a></li>\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\site\\layout.blade.php:\n   47  <body>\n   48      <!-- Admin Navigation -->\n   49:     @if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))\n   50      <nav class=\"navbar navbar-inverse navbar-static-top admin\" role=\"navigation\" style=\"margin-bottom: 0\">\n   51          <a class=\"navbar-brand\" href=\"{{ URL::route('home') }}\">Administración</a>\n   ..\n   86              <ul class=\"nav navbar-top-links navbar-right\">\n   87                  @section('top-right')\n   88:                     @if (Sentry::check())\n   89                      <strong>Saldo: <span class=\"horas-{{ (Sentry::getUser()->horas>1) ? 'positivas' : 'negativas' }}\">{{ Sentry::getUser()->horas.' horas' }}</span></strong>\n   90                      @endif\n   91                  @show\n   92  \n   93:                 @if (Sentry::check())\n   94                  <li class=\"dropdown\">\n   95                      <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\site\\sidebar.blade.php:\n   16                          <li><a href=\"/ofertas\"><i class=\"fa fa-share-alt fa-fw\"></i> {{ Lang::get('site.ofertas') }}</a></li>\n   17                          <li><a href=\"/demandas\"><i class=\"fa fa-life-ring fa-fw\"></i> {{ Lang::get('site.demandas') }}</a></li>\n   18:                         @if (Sentry::check())\n   19                              <li><a href=\"/intercambios\"><i class=\"fa fa-exchange fa-fw\"></i> {{ Lang::get('site.intercambios') }}</a></li>\n   20                          @endif\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\socis\\show.blade.php:\n  127  								<span class=\"titulo\">{{{ $anuncio->titulo }}}</span>\n  128  \n  129: 								@if (Sentry::check())\n  130  									@if ((Sentry::getUser()->hasAccess('admin')) || $anuncio->user_id == Sentry::getUser()->id)\n  131  									<span class=\"pull-right c-controls btn-group\">\n  ...\n  168  								<span class=\"titulo\">{{{ $anuncio->titulo }}}</span>\n  169  \n  170: 								@if (Sentry::check())\n  171  									@if ((Sentry::getUser()->hasAccess('admin')) || $anuncio->user_id == Sentry::getUser()->id)\n  172  									<span class=\"pull-right c-controls btn-group\">\n\nC:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\tallers\\index.blade.php:\n    5  <h1>All Tallers</h1>\n    6  \n    7: @if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))\n    8  	<p><a href=\"{{ URL::route('tallers.create') }}\" class=\"btn btn-lg btn-success\"><i class=\"fa fa-plus\"></i> {{ Lang::get('talleres.publicar') }}</a></p>\n    9  @else\n\n11 matches across 6 files\n",
+			"settings":
+			{
+				"buffer_size": 4426,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
 			}
 		}
 	],
@@ -252,6 +204,18 @@
 		"height": 104.0,
 		"selected_items":
 		[
+			[
+				"generate migration",
+				"Laravel Generate: Migration"
+			],
+			[
+				"generate scaffold",
+				"Laravel Generate: Scaffold"
+			],
+			[
+				"generate migra",
+				"Laravel Generate: Migration"
+			],
 			[
 				"generate migrat",
 				"Laravel Generate: Migration"
@@ -263,10 +227,6 @@
 			[
 				"generate	",
 				"Laravel Generate: Controller"
-			],
-			[
-				"generate migration",
-				"Laravel Generate: Migration"
 			],
 			[
 				"generate form",
@@ -309,7 +269,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 858.0
+		"width": 760.0
 	},
 	"console":
 	{
@@ -327,56 +287,92 @@
 	"file_history":
 	[
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/site.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/layout.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/hello.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/sidebar.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/style.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/less/sb-admin-2.less",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/index.blade.php",
+		"/C/Users/Carlos/Downloads/user-profile.htm",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/IntercambiosController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/pruebas/pruebas.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/AnunciosController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/fullcalendar/demos/agenda-views.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/less/sb-admin.less",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/sb-admin-2.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/socis/show.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/HomeController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/noticias/create.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/noticias/edit.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_22_195706_create_noticias_table.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/User.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/SociController.php",
+		"/C/Users/Carlos/Downloads/variables.less",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/icomoon.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/index.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/routes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Intercambio.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/fullcalendar/gcal.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/noticias/index.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/noticias/show.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/ckeditor/ckeditor.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/ckeditor/config.js",
+		"/C/Users/Carlos/Downloads/basic.ics",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/NoticiasController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/NoticiasTableSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/NoticiaTableSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/DatabaseSeeder.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Noticia.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/vendor/composer/autoload_classmap.php",
+		"/C/Users/Carlos/Downloads/snippets bootstrap/gmail-inbox.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/font-awesome-4.1.0/css/font-awesome.css",
+		"/C/Users/Carlos/Downloads/icomoon/demo-files/demo.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Anuncio.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/anuncios.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/PropuestasController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Propuesta.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/create.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/edit.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_16_233633_create_propuestas_table.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/edit.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/index.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/show.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/app.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_17_214913_rename_descripcion_from_categorias.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_17_220528_add_softdelete_to_anuncios.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/create.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/composer.json",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/storage/debugbar/b5a56eeddaa01a65993588e35d0ed0b1.json",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/storage/views/3bf3e93756a77c8edfd9e8299ca82d77",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/storage/logs/laravel.log",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_16_233633_create_propuestas_table.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/TallersController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/create.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/create.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/sidebar.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/index.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/layout.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/hello.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/calendar.css",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Taller.php",
 		"/C/Users/Carlos/Downloads/bootstrap.js",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/admincreate.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/edit.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/index.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/show.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/PropuestaController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Propuestum.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/DatabaseSeeder.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/PropuestaTableSeeder.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/routes.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/js/bootstrap-datetimepicker.min.js",
 		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/nuevo/public/js/bootstrap.js",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_16_112701_create_tallers_table.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/style.css",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/indexCopia.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/show.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/edit.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/storage/views/6f0f90246cfe26ec5c1a517097d7508f",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/SociController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/AnunciosTableSeeder.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/crearoferta.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/creardemanda.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/session.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/users/show.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/AnunciosTableSeeder.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/AnunciosController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/create.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/anuncios.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Categoria.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Anuncio.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/vendor/composer/autoload_classmap.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_15_212542_add_slug_to_categorias.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/CategoriaController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/createoferta.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/IntercambiosController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_14_000111_create_anuncios_table.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/categorias/create.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/creado.blade.php",
@@ -387,13 +383,10 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/AdminCategoriaController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_13_163735_create_intercambios_table.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/intercambios.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/User.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_08_191420_crear_anuncios.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/prueba.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/controllers/IntercambioController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/IntercambiosTableSeeder.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/app.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_12_212345_create_categoria_table.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/CategoriaTableSeeder.php",
 		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/CategoriasTableSeeder.php",
@@ -420,40 +413,7 @@
 		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/migrations/2014_11_10_000612_add_hours_to_users.php",
 		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/UsersTableSeeder.php",
 		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/layouts/default.blade.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/lang/es/site.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/controllers/AnuncioController.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/controllers/CategoriaController.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/anuncios/ofertas.blade.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/controllers/IntercambioController.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/User.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/composer.json",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/storage/logs/log-apache2handler-2014-11-10.txt",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/config/app.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/views/site/intercambios/correcto.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/views/site/intercambios/nuevo.blade.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Intercambio.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt - copia/app/lang/es/anuncios.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/views/site/anuncios/ofertas2.blade.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Post.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Categoria.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/models/Anuncio.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/AnunciosTableSeeder.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/PermissionsTableSeeder.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/views/anuncios/index.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/Anuncio.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/User.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/routes.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/DatabaseSeeder.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/UserTableSeeder.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/CategoriaTableSeeder.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/AnuncioTableSeeder.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_150334_añadir_user_a_anuncios.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_154617_crear_tabla_categorias.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_124215_crear_tabla_anuncios.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/Categoria.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_09_135657_crear_tabla_users.php",
-		"/C/PROGRA~2/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/models/Anuncio.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/seeds/AnuncioTableSeeder.php"
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/lang/es/site.php"
 	],
 	"find":
 	{
@@ -464,6 +424,9 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views",
+			"C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\vendor",
+			"C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app",
 			"C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo",
 			"C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\",
 			"C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views",
@@ -475,6 +438,32 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Sentry::check(",
+			"tallerista",
+			"categoria",
+			"categoria_id",
+			"cobrador_id",
+			"noticias",
+			"span",
+			"2",
+			"1",
+			"Noticium",
+			"noticium",
+			"noticia",
+			"Noticia",
+			"noticia",
+			"Noticium",
+			"noticium",
+			"noticia",
+			"Noticia",
+			"ofertas",
+			"anuncios",
+			"Anuncio",
+			"anuncios",
+			"<icon class=\"fa fa-user\"></icon>",
+			"ul",
+			"ofertas",
+			"user_id",
 			"p",
 			"anuncios",
 			"ropuestass",
@@ -516,6 +505,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Noticia",
+			"noticias",
+			"Noticias",
+			"Noticia",
+			"noticia",
+			"noticias",
+			"Noticias",
 			"ropuestas",
 			"ropuesta",
 			"ropuestas",
@@ -537,23 +533,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 12,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/database/migrations/2014_11_16_233633_create_propuestas_table.php",
+					"file": "app/controllers/HomeController.php",
 					"settings":
 					{
-						"buffer_size": 862,
+						"buffer_size": 683,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								680,
+								680
 							]
 						],
 						"settings":
@@ -570,9 +566,318 @@
 				},
 				{
 					"buffer": 1,
+					"file": "app/views/site/layout.blade.php",
 					"settings":
 					{
-						"buffer_size": 25411,
+						"buffer_size": 6992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1593,
+								1531
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1197.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/tallers/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/lang/es/talleres.php",
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/tallers/create.blade.php",
+					"settings":
+					{
+						"buffer_size": 6745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								530,
+								158
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/tallers/edit.blade.php",
+					"settings":
+					{
+						"buffer_size": 3697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3670,
+								3670
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/TallersController.php",
+					"settings":
+					{
+						"buffer_size": 4290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								563,
+								595
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/intercambios/create.blade.php",
+					"settings":
+					{
+						"buffer_size": 1915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/IntercambiosController.php",
+					"settings":
+					{
+						"buffer_size": 2743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1092,
+								1092
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/socis/show.blade.php",
+					"settings":
+					{
+						"buffer_size": 8678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3826,
+								3826
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1482.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/models/User.php",
+					"settings":
+					{
+						"buffer_size": 1433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								624,
+								624
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/controllers/SociController.php",
+					"settings":
+					{
+						"buffer_size": 1642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1639,
+								1639
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1197.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"settings":
+					{
+						"buffer_size": 4426,
 						"regions":
 						{
 							"match":
@@ -581,132 +886,48 @@
 								"regions":
 								[
 									[
-										517,
-										527
+										331,
+										345
 									],
 									[
-										932,
-										942
+										483,
+										497
 									],
 									[
-										1162,
-										1172
+										925,
+										939
 									],
 									[
-										1380,
-										1390
+										1392,
+										1406
 									],
 									[
-										5878,
-										5888
+										1847,
+										1861
 									],
 									[
-										11639,
-										11649
+										2258,
+										2272
 									],
 									[
-										12263,
-										12273
+										2555,
+										2569
 									],
 									[
-										19170,
-										19180
+										3121,
+										3135
 									],
 									[
-										19569,
-										19579
+										3529,
+										3543
 									],
 									[
-										19790,
-										19800
+										3819,
+										3833
 									],
 									[
-										20004,
-										20014
-									],
-									[
-										20584,
-										20594
-									],
-									[
-										21368,
-										21378
-									],
-									[
-										21429,
-										21439
-									],
-									[
-										21555,
-										21565
-									],
-									[
-										21698,
-										21708
-									],
-									[
-										22042,
-										22052
-									],
-									[
-										22335,
-										22345
-									],
-									[
-										22531,
-										22541
-									],
-									[
-										22822,
-										22832
-									],
-									[
-										23071,
-										23081
-									],
-									[
-										23360,
-										23370
-									],
-									[
-										23413,
-										23423
-									],
-									[
-										23534,
-										23544
-									],
-									[
-										23669,
-										23679
-									],
-									[
-										23981,
-										23991
-									],
-									[
-										24225,
-										24235
-									],
-									[
-										24420,
-										24430
-									],
-									[
-										24638,
-										24648
-									],
-									[
-										24673,
-										24683
-									],
-									[
-										25005,
-										25015
-									],
-									[
-										25249,
-										25259
+										4169,
+										4183
 									]
 								],
 								"scope": ""
@@ -735,522 +956,12 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/propuestas/edit.blade.php",
-					"settings":
-					{
-						"buffer_size": 4475,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/propuestas/index.blade.php",
-					"settings":
-					{
-						"buffer_size": 1721,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/propuestas/show.blade.php",
-					"settings":
-					{
-						"buffer_size": 1569,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/anuncios/index.blade.php",
-					"settings":
-					{
-						"buffer_size": 2700,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2276,
-								2276
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 920.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/models/Anuncio.php",
-					"settings":
-					{
-						"buffer_size": 683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								496,
-								496
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/config/app.php",
-					"settings":
-					{
-						"buffer_size": 8009,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1304,
-								1304
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/controllers/AnunciosController.php",
-					"settings":
-					{
-						"buffer_size": 4599,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1348,
-								1348
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "public/css/sb-admin-2.css",
-					"settings":
-					{
-						"buffer_size": 5530,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								365,
-								365
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/database/migrations/2014_11_17_214913_rename_descripcion_from_categorias.php",
-					"settings":
-					{
-						"buffer_size": 566,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								415
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "app/database/migrations/2014_11_17_220528_add_softdelete_to_anuncios.php",
-					"settings":
-					{
-						"buffer_size": 512,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								512,
-								512
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "app/views/anuncios/create.blade.php",
-					"settings":
-					{
-						"buffer_size": 2814,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								417,
-								417
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 13,
-					"file": "app/controllers/PropuestasController.php",
-					"settings":
-					{
-						"buffer_size": 2441,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								231,
-								231
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 720.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/models/Propuesta.php",
-					"settings":
-					{
-						"buffer_size": 441,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "app/views/propuestas/create.blade.php",
-					"settings":
-					{
-						"buffer_size": 4302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								315,
-								315
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "public/css/style.css",
-					"settings":
-					{
-						"buffer_size": 982,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								803,
-								803
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 620.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "app/views/anuncios/edit.blade.php",
-					"settings":
-					{
-						"buffer_size": 2592,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2557,
-								2557
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 960.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "app/lang/es/anuncios.php",
-					"settings":
-					{
-						"buffer_size": 850,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								534,
-								534
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "app/views/site/sidebar.blade.php",
-					"settings":
-					{
-						"buffer_size": 1542,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1220,
-								1220
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 220.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1282,7 +993,7 @@
 		"cols":
 		[
 			0.0,
-			0.29694462126,
+			0.647474747475,
 			1.0
 		],
 		"rows":
@@ -1329,6 +1040,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 349.0,
+	"side_bar_width": 435.0,
 	"status_bar_visible": true
 }

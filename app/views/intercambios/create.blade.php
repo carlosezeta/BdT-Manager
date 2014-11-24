@@ -1,15 +1,29 @@
 @extends('site.layout')
 
 @section('content')
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-2">
+        <h1>{{ Lang::get('intercambios.pagar') }}</h1>
+
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+                </ul>
+            </div>
+        @endif
+    </div>
+</div>
+
 {{ Form::open(array('route' => 'intercambios.store', 'class' => 'form-horizontal')) }}
 
     <div class="form-group">
         {{ Form::label('cobrador_id', 'Pagar a:', array('class'=>'col-md-2 control-label')) }}
         <div class="col-sm-10">
-          {{ Form::text('cobrador_id', Input::old('cobrador_id'), array('class'=>'form-control', 'placeholder'=>'cobrador')) }}
+          {{ Form::select('cobrador_id', $users, null, array('class' => 'form-control')) }}
         </div>
     </div>
-
 
     <div class="form-group">
         {{ Form::label('horas', 'Horas:', array('class'=>'col-md-2 control-label')) }}
@@ -21,7 +35,7 @@
 	<div class="form-group">
         {{ Form::label('categoria_id', 'Categoría:', array('class'=>'col-md-2 control-label')) }}
         <div class="col-sm-10">
-          {{ Form::select('categoria_id', $categorias) }}
+          {{ Form::select('categoria_id', $categorias, null, array('class' => 'form-control')) }}
         </div>
     </div>
 	

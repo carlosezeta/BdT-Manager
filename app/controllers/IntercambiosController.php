@@ -10,8 +10,22 @@ class IntercambiosController extends BaseController {
 	public function index()
 	{
 		$intercambios = Intercambio::all();
-        return View::make('intercambios.index')->with('intercambios', $intercambios);
+        return View::make('intercambios.index')->with('intercambios', $intercambios)->with('titulo_pagina', 'Todos los intercambios');
 	}
+
+
+	public function intercambiosCat($cat_slug)
+	{
+		$cat = Categoria::whereSlug($cat_slug)->get()->first();
+		if (empty($cat)) {
+			Redirect::to('intercambios');
+		} else {
+			$intercambios = Intercambio::whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
+
+			return View::make('intercambios.index')->with('intercambios', $intercambios)->with('titulo_pagina', 'Intercambios de '.$cat->nombre);
+		}
+	}
+
 
 	
 	/**
@@ -21,8 +35,19 @@ class IntercambiosController extends BaseController {
 	 */
 	public function Create()
 	{
+
+		$usuarios = User::all();
+
+	    $users = $usuarios->filter(function($user)
+	    {
+	        if ($user->id <> Session::get('userId')) {
+	            return true;
+	        }
+	    })->lists('username', 'first_name', 'id');
+
+
 		$categorias = Categoria::orderBy('nombre')->lists('nombre', 'id');
-		return View::make('intercambios.create')->with('categorias', $categorias);
+		return View::make('intercambios.create')->with('categorias', $categorias)->with('users', $users);
 	}
 
 

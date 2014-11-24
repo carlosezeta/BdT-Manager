@@ -15,6 +15,7 @@ return array(
 	'demanda_min'			=> 'demanda',
 	'publicar_anuncio'		=> 'Publicar anuncio',
 	'editar_anuncio'		=> 'Editar Anuncio',
+	'publicar'				=> 'Publicar',
 	'publicar_oferta'		=> 'Publicar Oferta',
 	'publicar_demanda'		=> 'Publicar Demanda',
 	'titulo'				=> 'Título',

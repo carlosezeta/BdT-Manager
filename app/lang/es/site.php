@@ -4,7 +4,7 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Textos de las vistas de "Categorías"
+	| Textos comunes a varias vistas
 	|--------------------------------------------------------------------------
 	*/
 
@@ -16,6 +16,8 @@ return array(
 	'inicio'		=> 'Inicio',
 	'ofertas'		=> 'Ofertas',
 	'demandas'		=> 'Demandas',
-	'talleres'		=> 'Talleres'
+	'intercambios'	=> 'Intercambios',
+	'talleres'		=> 'Talleres',
+	'no-hay-nada'	=> 'No hay resultados que mostrar.'
 	
 );

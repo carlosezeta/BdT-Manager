@@ -13,6 +13,11 @@ class Anuncio extends Eloquent {
 		'tipo' => 'required'
 	);
 
+	public function scopeLastXDays($query, $nb)
+	{
+	    return $query->where('created_at', '>=', new DateTime('-'.$nb.' days')); 
+	}
+
 	public function getCreatedAtAttribute($attr) {        
         return Carbon::parse($attr)->format('d/m/Y');
     }

@@ -17,15 +17,20 @@
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
+    <!-- Social Buttons -->
+    <link href="{{ asset('css/bootstrap-social.css') }}" rel="stylesheet">
+
     <!-- MetisMenu CSS -->
     <link href="{{ asset('css/plugins/metisMenu/metisMenu.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{ asset('css/sb-admin-2.css') }}" rel="stylesheet">
+    
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{{ asset('font-awesome-4.1.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <!--<link href="{{ asset('css/icomoon.css') }}" rel="stylesheet">-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,11 +45,28 @@
 </head>
 
 <body>
-
+    <!-- Admin Navigation -->
+    @if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
+    <nav class="navbar navbar-inverse navbar-static-top admin" role="navigation" style="margin-bottom: 0">
+        <a class="navbar-brand" href="{{ URL::route('home') }}">Administración</a>
+        <ul class="nav navbar-nav">
+            
+                <li {{ (Request::is('users*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\UserController@index') }}">Usuarios</a></li>
+                <li {{ (Request::is('groups*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\GroupController@index') }}">Grupos</a></li>
+                <li {{ (Request::is('categorias*') ? 'class="active"' : '') }}><a href="{{ URL::action('CategoriaController@index') }}">Categorías</a></li>
+                <li {{ (Request::is('noticias*') ? 'class="active"' : '') }}><a href="{{ URL::action('NoticiasController@index') }}">Noticias</a></li>
+                <li {{ (Request::is('ofertas*') ? 'class="active"' : '') }}><a href="/ofertas">Ofertas</a></li>
+                <li {{ (Request::is('demandas*') ? 'class="active"' : '') }}><a href="/demandas">Demandas</a></li>
+                <li {{ (Request::is('propuestas*') ? 'class="active"' : '') }}><a href="{{ URL::action('PropuestasController@index') }}">Propuestas</a></li>
+                <li {{ (Request::is('talleres*') ? 'class="active"' : '') }}><a href="{{ URL::action('TallersController@index') }}">Talleres</a></li>
+        </ul>
+    </nav>
+    @endif
     <div id="wrapper">
 
+
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-static-top nav-header" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -52,26 +74,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ URL::route('home') }}">BdT Pont del Dimoni</a>
+                <a class="navbar-brand" href="{{ URL::route('home') }}">
+                    {{ HTML::image('imgs/logo.png', 'logo', array('class' => 'logo')) }}
+                    {{ HTML::image('imgs/header.jpg', 'header', array('class' => 'header hidden-xs hidden-sm')) }}</a>
             </div>
             <!-- /.navbar-header -->
 
-			<ul class="nav navbar-nav">
-				@if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
-					<li {{ (Request::is('users*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\UserController@index') }}">Usuarios</a></li>
-					<li {{ (Request::is('groups*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\GroupController@index') }}">Grupos</a></li>
-                    <li {{ (Request::is('categorias*') ? 'class="active"' : '') }}><a href="{{ URL::action('CategoriaController@index') }}">Categorías</a></li>
-				@endif
-                @if (Sentry::check())
-                    <li {{ (Request::is('ofertas*') ? 'class="active"' : '') }}><a href="{{ URL::action('AnunciosController@ofertas') }}">Ofertas</a></li>
-                    <li {{ (Request::is('demandas*') ? 'class="active"' : '') }}><a href="{{ URL::action('AnunciosController@demandas') }}">Demandas</a></li>
-                @endif
-			</ul>
+			
 
 
             <ul class="nav navbar-top-links navbar-right">
-                
                 @section('top-right')
+                    @if (Sentry::check())
+                    <strong>Saldo: <span class="horas-{{ (Sentry::getUser()->horas>1) ? 'positivas' : 'negativas' }}">{{ Sentry::getUser()->horas.' horas' }}</span></strong>
+                    @endif
                 @show
 
                 @if (Sentry::check())
@@ -80,7 +96,7 @@
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="/users/{{ Session::get('userId') }}"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                        <li><a href="/socis/{{ Session::get('userId') }}"><i class="fa fa-user fa-fw"></i> Perfil</a>
                         </li>
                         <li class="divider"></li>
                         <li><a href="{{ URL::route('Sentinel\logout') }}"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
@@ -128,6 +144,7 @@
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
+
 
     </div>
     <!-- /#wrapper -->

@@ -41,7 +41,14 @@ class SociController extends BaseController {
 	public function show($id)
 	{
 		$user = User::find($id);
-        return View::make('socis.show')->with('user', $user);
+		$intercambios = Intercambio::where('pagador_id','=',$id)->orWhere('cobrador_id','=',$id)->orderBy('created_at', 'desc')->get();
+        $ofertas = Anuncio::whereTipo('O')->whereUserId($id)->orderBy('created_at', 'desc')->get();
+        $demandas = Anuncio::whereTipo('D')->whereUserId($id)->orderBy('created_at', 'desc')->get();
+        return View::make('socis.show')
+        			->with('user', $user)
+        			->with('intercambios', $intercambios)
+        			->with('ofertas', $ofertas)
+        			->with('demandas', $demandas);
 	}
 
 	/**

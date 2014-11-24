@@ -5,82 +5,91 @@
 @stop
 
 @section('styles')
-	<link href="{{ asset('css/calendar.css') }}" rel="stylesheet">
+	<link href="{{ asset('fullcalendar/fullcalendar.min.css') }}" rel="stylesheet">
+  <style>
+  .fc-event {
+    border: 1px solid #6DA376;
+    background-color: #6DA376;
+  }
+  </style>
 @stop
 
 @section('content')
   <div class="row">
-    <div class="col-md-7">
+    <div class="col-lg-7 col-md-12">
     	<div id="calendar"></div>
     </div>
-  </div>
+
+    <div class="col-lg-5 col-md-12">
+      <h1 class="text-center">Últimas Noticias</h1>
+      
+      @foreach ($noticias as $noticia)
+        <h2>{{ $noticia->titulo }}</h2>
+        <h4>{{ $noticia->entradilla }}</h2>
+        <p>{{ $noticia->mensaje }}</p>
+ 
+        <p>
+          <span class="badge">Publicado el {{ $noticia->created_at }}</span>
+          
+          <span class="pull-right">
+            <a class="btn btn-social-icon btn-facebook btn-xs">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a class="btn btn-social-icon btn-twitter btn-xs">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="btn btn-social-icon btn-google-plus btn-xs">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </span>
+        </p>
+
+        <hr>
+      @endforeach
+
+    </div><!-- col-md -->
+  </div><!-- row -->
 
 @stop
 
 @section('scripts')
-	<script>
-$.getScript('http://arshaw.com/js/fullcalendar-1.6.4/fullcalendar/fullcalendar.min.js',function(){
-  
-  var date = new Date();
-  var d = date.getDate();
-  var m = date.getMonth();
-  var y = date.getFullYear();
-  
-  $('#calendar').fullCalendar({
-    header: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'month,agendaWeek,agendaDay'
-    },
-    editable: true,
-    events: [
-      {
-        title: 'All Day Event',
-        start: new Date(y, m, 1)
-      },
-      {
-        title: 'Long Event',
-        start: new Date(y, m, d-5),
-        end: new Date(y, m, d-2)
-      },
-      {
-        id: 999,
-        title: 'Repeating Event',
-        start: new Date(y, m, d-3, 16, 0),
-        allDay: false
-      },
-      {
-        id: 999,
-        title: 'Repeating Event',
-        start: new Date(y, m, d+4, 16, 0),
-        allDay: false
-      },
-      {
-        title: 'Meeting',
-        start: new Date(y, m, d, 10, 30),
-        allDay: false
-      },
-      {
-        title: 'Lunch',
-        start: new Date(y, m, d, 12, 0),
-        end: new Date(y, m, d, 14, 0),
-        allDay: false
-      },
-      {
-        title: 'Birthday Party',
-        start: new Date(y, m, d+1, 19, 0),
-        end: new Date(y, m, d+1, 22, 30),
-        allDay: false
-      },
-      {
-        title: 'Click for Google',
-        start: new Date(y, m, 28),
-        end: new Date(y, m, 29),
-        url: 'http://google.com/'
-      }
-    ]
+<script src="{{ asset('fullcalendar/lib/moment.min.js') }}"></script>
+<script src="{{ asset('fullcalendar/fullcalendar.min.js') }}"></script>
+  <script type='text/javascript' src="{{ asset('fullcalendar/gcal.js') }}"></script>
+  <script type='text/javascript' src="{{ asset('fullcalendar/lang/ca.js') }}"></script>
+
+ 
+<script type='text/javascript'>
+
+  $(document).ready(function() {
+      var date = new Date();
+      var d = date.getDate();
+      var m = date.getMonth();
+      var y = date.getFullYear();
+      var currentLangCode = 'ca';
+
+      $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          googleCalendarApiKey: 'AIzaSyATozKQoheigIqMn0haBvFEN4o_wKQkdS0',
+          eventSources: [
+            {
+                googleCalendarId: 'bdtpontdeldimoni@gmail.com'
+            },
+            {
+                googleCalendarId: 'dksm23k4frv3vbdn571748tdfs@group.calendar.google.com',
+                overlap: false,
+                rendering: 'background',
+                color: '#ff9f89'
+            }
+          ]
+      });
   });
-})
+
 </script>
+
 
 @stop

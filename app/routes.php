@@ -12,10 +12,12 @@
 */
 
 // Set Home Route (needed for sydurham/Sentinel)
- Route::get('/', array('as' => 'home', function()
-{
-    return View::make('hello');
-}));
+Route::get('/', array('as' => 'home', 'uses' => 'HomeController@showWelcome'));
+
+Route::get('ofertas/ultimos-{dias}-dias', array('as' => 'ofertas-ultimos-dias', 'uses' => 'AnunciosController@ofertas'));
+
+Route::get('demandas/ultimos-{dias}-dias', array('as' => 'demandas-ultimos-dias', 'uses' => 'AnunciosController@demandas'));
+
 
 // Rutas para Admins
 Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
@@ -26,19 +28,17 @@ Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
 Route::group(array('before' => 'Sentinel\auth'), function() {
 	Route::get('publicar-oferta', array('as'=>'publicar-oferta', 'uses' => 'AnunciosController@crearoferta'));
 	Route::get('publicar-demanda', array('as'=>'publicar-demanda', 'uses' => 'AnunciosController@creardemanda'));
-	/*Route::get('socis/{id}', function($id)
-	{
-		$user = User::find($id);
-		return View::make('users.show')->with('user', $user);
-	});
-	*/
 	Route::get('socis/{id}', 'SociController@show');
+	Route::get('ofertas/usuario/{usuario}', array('as' => 'ofertas-usuario', 'uses' => 'AnunciosController@ofertasUsuario'));
+	Route::get('demandas/usuario/{usuario}', array('as' => 'demandas-usuario', 'uses' => 'AnunciosController@demandasUsuario'));
+
 });
 
 // Rutas de acceso público
 Route::resource('categorias', 'CategoriaController');
 
 Route::resource('intercambios', 'IntercambiosController');
+Route::get('intercambios/categoria/{cat_slug}', 'IntercambiosController@intercambiosCat');
 
 Route::resource('anuncios', 'AnunciosController');
 Route::get('ofertas', 'AnunciosController@ofertas');
@@ -50,3 +50,7 @@ Route::get('demandas/{cat_slug}', 'AnunciosController@demandasCat');
 Route::resource('tallers', 'TallersController');
 
 Route::resource('propuestas', 'PropuestasController');
+
+
+
+Route::resource('noticias', 'NoticiasController');

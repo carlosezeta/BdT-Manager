@@ -1,4 +1,4 @@
-            <div class="navbar-default sidebar" role="navigation">
+            <div id="menu" class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
@@ -15,6 +15,9 @@
                         <li><a href="/"><i class="fa fa-home fa-fw"></i> {{ Lang::get('site.inicio') }}</a></li>
                         <li><a href="/ofertas"><i class="fa fa-share-alt fa-fw"></i> {{ Lang::get('site.ofertas') }}</a></li>
                         <li><a href="/demandas"><i class="fa fa-life-ring fa-fw"></i> {{ Lang::get('site.demandas') }}</a></li>
+                        @if (Sentry::check())
+                            <li><a href="/intercambios"><i class="fa fa-exchange fa-fw"></i> {{ Lang::get('site.intercambios') }}</a></li>
+                        @endif
                         <li><a href="/tallers"><i class="fa fa-users fa-fw"></i> {{ Lang::get('site.talleres') }}</a></li>
 
                         @section('sidebarContent')

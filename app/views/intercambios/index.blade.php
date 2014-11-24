@@ -1,37 +1,40 @@
 @extends('site.layout')
 
+
 @section('content')
 
-<h1>{{ Lang::get('intercambios.todos') }}</h1>
+<h1>{{ $titulo_pagina }}</h1>
 
 <p>{{ link_to_route('intercambios.create', Lang::get('intercambios.pagar'), null, array('class' => 'btn btn-lg btn-success')) }}</p>
 
 @if ($intercambios->count())
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th>{{ Lang::get('intercambios.fecha') }}</th>
-				<th>{{ Lang::get('intercambios.de') }}</th>
-				<th>{{ Lang::get('intercambios.a') }}</th>
-				<th>{{ Lang::get('intercambios.horas') }}</th>
-				<th>{{ Lang::get('intercambios.descripcion') }}</th>
-			</tr>
-		</thead>
+@foreach ($intercambios as $intercambio)
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<div class="panel panel-default intercambio">
+				<div class="panel-heading titulo">
+					{{ HTML::link('socis/'.$intercambio->pagador_id, $intercambio->pagador->username) }}
+						<icon class="icon icon-busy"></icon>
+						<icon class="fa fa-long-arrow-right"></icon>
+  {{ HTML::link('socis/'.$intercambio->cobrador_id, $intercambio->cobrador->username) }} ({{ $intercambio->horas }}
+						@if ($intercambio->horas > 1)
+							horas)
+						@else
+							hora)
+						@endif
+					<span class="muted">{{ HTML::link( 'intercambios/categoria/' .$intercambio->categoria->slug, $intercambio->categoria->nombre) }}</span>
+				</div><span class="fecha muted pull-right">{{ $intercambio->created_at }}</span>
+				<div class="panel-body">
+					<strong>{{ $intercambio->pagador->username}}:</strong> {{ $intercambio->descripcion }}
+				</div>
+			</div>
+		</div>
+	</div>
+@endforeach
 
-		<tbody>
-			@foreach ($intercambios as $intercambio)
-				<tr>
-					<td>{{ $intercambio->created_at }}</td>
-					<td>{{ User::find($intercambio->pagador_id)->username }}</td>
-                    <td>{{ User::find($intercambio->cobrador_id)->username }}</td>
-                    <td>{{ $intercambio->horas }}</td>
-                    <td>{{ $intercambio->descripcion }}</td>
-				</tr>
-			@endforeach
-		</tbody>
-	</table>
+
 @else
-	{{ Lang::get('categorias.ninguna') }}
+	{{ Lang::get('site.no-hay-nada') }}
 @endif
 
 @stop

@@ -3,20 +3,35 @@
 @section('content')
 
 @if (Request::is('ofertas*'))
-<h1>{{ Lang::get('site.ofertas') }}</h1>
-<p><a href="{{ URL::route('publicar-oferta') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> Publicar Oferta</a></p>
+	<?php
+		$txtanuncios = 'ofertas';
+		$txtanuncio = 'oferta';
+		$concreto = true;
+	?>
 @elseif (Request::is('demandas*'))
-<h1>{{ Lang::get('site.demandas') }}</h1>
-<p><a href="{{ URL::route('publicar-demanda') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> Publicar Demanda</a></p>
+	<?php
+		$txtanuncios = 'demandas';
+		$txtanuncio = 'demanda';
+		$concreto = true;
+	?>
 @else
-<h1>{{ Lang::get('site.anuncios') }}</h1>
-<p>
-	<a href="{{ URL::route('publicar-oferta') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> Publicar Oferta</a>
-	<a href="{{ URL::route('publicar-demanda') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> Publicar Demanda</a>
-</p>
+	<?php
+		$txtanuncios = 'anuncios';
+		$txtanuncio = 'anuncio';
+		$concreto = false;
+	?>
 @endif
 
-
+<h1>{{ Lang::get('site.'.$txtanuncios) }}</h1>
+@if ($concreto)
+	<p><a href="{{ URL::route('publicar-'.$txtanuncio) }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar').' '.Lang::get('anuncios.'.$txtanuncio) }}</a></p>
+@else
+	<p>
+		<a href="{{ URL::route('publicar-oferta') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar-oferta') }}</a>
+		<a href="{{ URL::route('publicar-demanda') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar-demanda') }}</a>
+	</p>
+@endif
+<p>Ver últimos: <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '3') }}">3 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '7') }}">7 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '15') }}">15 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '30') }}">30 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '60') }}">60 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '90') }}">90 días</a></p>
 @if ($anuncios->count())
 	<?php $cat_ant = $anuncios->first()->categoria_id; ?>
 	<div class="row">
@@ -36,13 +51,15 @@
 				<div class="panel-heading c-list">
 					<span class="titulo">{{{ $anuncio->titulo }}}{{ (Sentry::check() ? (' <small>('. HTML::link('socis/'.$anuncio->user_id, $anuncio->user->username) .')</small>') : '') }}</span>
 
-					@if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
-						<ul class="pull-right c-controls">
-	                        <li><a href="{{ URL::route('anuncios.edit', $anuncio->id) }}" class="btn btn-block btn-success"><i class="fa fa-edit"></i> Editar</a></li>
-	                        <li>{{ Form::open(array('method' => 'DELETE', 'route' => array('anuncios.destroy', $anuncio->id))) }}
-	                <button type="submit" class="form-control btn btn-danger btn-block"><i class="fa fa-trash"></i> Eliminar</button>
-	            {{ Form::close() }}</li>
-	                    </ul>
+					@if (Sentry::check())
+						@if ((Sentry::getUser()->hasAccess('admin')) || $anuncio->user_id == Sentry::getUser()->id)
+						<span class="pull-right c-controls btn-group">
+							{{ Form::open(array('method' => 'DELETE', 'route' => array('anuncios.destroy', $anuncio->id))) }}
+	                        <a href="{{ URL::route('anuncios.edit', $anuncio->id) }}" class="btn btn-success"><i class="fa fa-edit"></i> Editar</a> 
+	                			<button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+	            			{{ Form::close() }}
+	                    </span>
+	                    @endif
 					@endif
 
 				</div>
@@ -60,7 +77,7 @@
 
 
 @else
-	There are no anuncios
+	{{ Lang::get('site.no-hay-nada') }}
 @endif
 
 @stop

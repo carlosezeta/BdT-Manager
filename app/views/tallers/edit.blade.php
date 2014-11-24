@@ -33,14 +33,14 @@
         </div>
 
         <div class="form-group">
-            {{ Form::label('esgrupo', 'Esgrupo:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('esgrupo', 'Es grupo:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
               {{ Form::checkbox('esgrupo') }}
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('textorepeticion', 'Textorepeticion:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('textorepeticion', 'Texto Repeticion:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
               {{ Form::text('textorepeticion', Input::old('textorepeticion'), array('class'=>'form-control', 'placeholder'=>'Textorepeticion')) }}
             </div>
