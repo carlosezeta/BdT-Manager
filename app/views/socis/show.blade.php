@@ -4,6 +4,54 @@
 {{-- Content --}}
 @section('content')
 
+<!-- Modal Imagen -->
+<div class="modal fade" id="modal-imagen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+        <h4 class="modal-title" id="myModalLabel">Subir imagen</h4>
+      </div>
+      <div class="modal-body">
+
+        {{ Form::open(array('action' => 'SociController@imgStore', 'class' => 'form-horizontal', 'files' => true)) }}
+
+        	<div class="form-group">
+	            {{ Form::label('img', 'Imagen:', array('class'=>'col-md-2 control-label')) }}
+	            <div class="col-sm-10">
+	              {{ Form::file('img', array('class'=>'form-control', 'placeholder'=>'Img')) }}
+	            </div>
+	        </div>
+
+
+			<div class="form-group">
+			    <label class="col-sm-2 control-label">&nbsp;</label>
+			    <div class="col-sm-10">
+			      {{ Form::submit( Lang::get('site.enviar') , array('class' => 'btn btn-lg btn-primary')) }}
+			    </div>
+			</div>
+
+		{{ Form::close() }}
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <ul class="nav nav-tabs show-soci">
   <li class="active"><a href="#perfil" data-toggle="tab"><strong>{{ $user->username }}</strong></a></li>
   <li><a href="#ofertas" data-toggle="tab">{{ Lang::get('site.ofertas') }}</a></li>
@@ -20,7 +68,9 @@
 	            <div class="col-xs-12 col-sm-3 col-sm-offset-1 col-xs-offset-0 text-center perfil-bloque-izquierdo">
 					<div class="foto-perfil">
 						<div class="foto-caption img-circle">
-		                    <p class="foto-caption-btn"><a href="#" class="btn btn-primary" rel="tooltip" title="Subir Imagen">Editar</a></p>
+		                    
+							<button type="button" class="btn btn-primary foto-caption-btn" data-toggle="modal" data-target="#modal-imagen">Editar</button>
+
 		                </div>
 						{{ HTML::image('imgs/perfiles/male.png', '', ['class' => 'center-block img-circle img-thumbnail img-responsive']) }}
 	          		</div>

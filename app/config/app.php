@@ -125,6 +125,7 @@ return array(
 		'Former\FormerServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Dollar\Generators\GeneratorsServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
 
 	),
 
@@ -192,12 +193,12 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
-
 		'Activation'		=> 'Cartalyst\Sentinel\Laravel\Facades\Activation',
 		'Reminder'  		=> 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
 		'Sentinel'  		=> 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
 		'Former'			=> 'Former\Facades\Former',
 		'Debugbar'			=> 'Barryvdh\Debugbar\Facade',
+		'Image'				=> 'Intervention\Image\Facades\Image',
 
 	),
 

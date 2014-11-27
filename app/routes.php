@@ -30,6 +30,7 @@ Route::group(array('before' => 'Sentinel\auth'), function() {
 	Route::get('publicar-oferta', array('as'=>'publicar-oferta', 'uses' => 'AnunciosController@crearoferta'));
 	Route::get('publicar-demanda', array('as'=>'publicar-demanda', 'uses' => 'AnunciosController@creardemanda'));
 	Route::get('socis/{id}', 'SociController@show');
+	Route::post('sociImgStore', 'SociController@imgStore');
 	Route::get('ofertas/usuario/{usuario}', array('as' => 'ofertas-usuario', 'uses' => 'AnunciosController@ofertasUsuario'));
 	Route::get('demandas/usuario/{usuario}', array('as' => 'demandas-usuario', 'uses' => 'AnunciosController@demandasUsuario'));
 
