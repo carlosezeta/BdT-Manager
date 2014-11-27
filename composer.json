@@ -10,7 +10,8 @@
 		"dollar/generators": "dev-master",
 		"anahkiasen/former": "dev-master",
 		"barryvdh/laravel-debugbar": "dev-master",
-		"doctrine/dbal": "~2.3"
+		"doctrine/dbal": "~2.3",
+		"intervention/image": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

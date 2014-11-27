@@ -17,9 +17,13 @@
 			
 			  <div class="row">
 			  	
-	            <div class="col-xs-12 col-sm-3 col-sm-offset-1 col-xs-offset-0 text-center">
-	              
-	              {{ HTML::image('imgs/perfiles/male.png', '', ['class' => 'center-block img-circle img-thumbnail img-responsive']) }}
+	            <div class="col-xs-12 col-sm-3 col-sm-offset-1 col-xs-offset-0 text-center perfil-bloque-izquierdo">
+					<div class="foto-perfil">
+						<div class="foto-caption img-circle">
+		                    <p class="foto-caption-btn"><a href="#" class="btn btn-primary" rel="tooltip" title="Subir Imagen">Editar</a></p>
+		                </div>
+						{{ HTML::image('imgs/perfiles/male.png', '', ['class' => 'center-block img-circle img-thumbnail img-responsive']) }}
+	          		</div>
 
 					<div class="col-sm-12 social-buttons">
 
@@ -92,11 +96,7 @@
 				
 				</div> <!-- /widget -->
 
-	            </div>
-	            <!--/col-->
-			  </div>
-	          <!--/row-->
-	            <div class="clearfix"></div>
+
 	          	<div class="row perfil-botones">
 		            <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-xs-offset-0 perfil-botones">
 		              <button class="btn btn-success btn-lg btn-block"><span class="fa fa-envelope-o"></span> Enviar Mensaje </button>
@@ -111,6 +111,14 @@
 
 				</div>
 				<!--/row-->
+
+
+            </div>
+            <!--/col-->
+		  </div>
+          <!--/row-->
+	      <div class="clearfix"></div>
+
 
         </div>
 
@@ -230,32 +238,22 @@
 			@endif
         </div>
 
-
-
-
-
 	</div>
+@stop
 
-
-  	<div class="well clearfix" style="margin-top: 100px;">
-	    <div class="col-md-8">
-		    @if ($user->first_name)
-		    	<p><strong>First Name:</strong> {{ $user->first_name }} </p>
-			@endif
-			@if ($user->last_name)
-		    	<p><strong>Last Name:</strong> {{ $user->last_name }} </p>
-			@endif
-		    <p><strong>Email:</strong> {{ $user->email }}</p>
-		    
-		</div>
-		<div class="col-md-4">
-			<p><em>Account created: {{ $user->created_at }}</em></p>
-			<p><em>Last Updated: {{ $user->updated_at }}</em></p>
-		</div>
-	</div>
-
-	
-
-
-
+@section('scripts')
+<script type="text/javascript">
+	$( document ).ready(function() {
+	    $("[rel='tooltip']").tooltip();    
+	 
+	    $('.foto-perfil').hover(
+	        function(){
+	            $(this).find('.foto-caption').fadeIn(250); //.slideDown(250)
+	        },
+	        function(){
+	            $(this).find('.foto-caption').fadeOut(250); //.slideUp(205)
+	        }
+	    ); 
+	});
+</script>
 @stop

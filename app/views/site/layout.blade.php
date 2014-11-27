@@ -47,7 +47,7 @@
 <body>
     <!-- Admin Navigation -->
     @if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
-    <nav class="navbar navbar-inverse navbar-static-top admin" role="navigation" style="margin-bottom: 0">
+    <nav class="navbar navbar-inverse navbar-static-top admin hidden-xs" role="navigation" style="margin-bottom: 0">
         <a class="navbar-brand" href="{{ URL::route('home') }}">Administración</a>
         <ul class="nav navbar-nav">
             
@@ -59,6 +59,7 @@
                 <li {{ (Request::is('demandas*') ? 'class="active"' : '') }}><a href="/demandas">Demandas</a></li>
                 <li {{ (Request::is('propuestas*') ? 'class="active"' : '') }}><a href="{{ URL::action('PropuestasController@index') }}">Propuestas</a></li>
                 <li {{ (Request::is('talleres*') ? 'class="active"' : '') }}><a href="{{ URL::action('TallersController@index') }}">Talleres</a></li>
+                <li {{ (Request::is('tareas*') ? 'class="active"' : '') }}><a href="{{ URL::action('TareasController@index') }}">Tareas</a></li>
         </ul>
     </nav>
     @endif
@@ -83,7 +84,7 @@
 			
 
 
-            <ul class="nav navbar-top-links navbar-right">
+            <ul class="nav navbar-top-links navbar-right hidden-xs">
                 @section('top-right')
                     @if (Sentry::check())
                     <strong>Saldo: <span class="horas-{{ (Sentry::getUser()->horas>1) ? 'positivas' : 'negativas' }}">{{ Sentry::getUser()->horas.' horas' }}</span></strong>

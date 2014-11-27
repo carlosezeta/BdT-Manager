@@ -14,7 +14,7 @@
 
 
 	@foreach ($tallers as $taller)
-		<div class="col-sm-4 img-rounded taller" style="border: 1px solid black;">
+		<div class="col-sm-4 img-rounded taller shadow-box" style="border: 1px solid black;">
 			<h3>{{ $taller->titulo }}</h3>
 			<p>({{ $taller->tallerista->username }})</p>
 			{{ HTML::image('imgs/tallers/'.$taller->img, $taller->titulo, array( 'width' => '100%' )) }}

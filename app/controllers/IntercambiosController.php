@@ -43,10 +43,9 @@ class IntercambiosController extends BaseController {
 	        if ($user->id <> Session::get('userId')) {
 	            return true;
 	        }
-	    })->lists('username', 'first_name', 'id');
+	    })->values();
 
-
-		$categorias = Categoria::orderBy('nombre')->lists('nombre', 'id');
+	    $categorias = Categoria::orderBy('nombre')->get();
 		return View::make('intercambios.create')->with('categorias', $categorias)->with('users', $users);
 	}
 
@@ -59,29 +58,44 @@ class IntercambiosController extends BaseController {
 	public function store()
 	{
 		$pagador_id = Session::get('userId');
-
 		$cobrador_id = Input::get('cobrador_id');
 		$categoria_id = Input::get('categoria_id');
-		$horas = Input::get('horas');
+		$horas = Input::get('horas')+Input::get('minutos')/60;
 		$descripcion = Input::get('descripcion');
 
-		$intercambio = new Intercambio;
-		$intercambio->pagador_id = $pagador_id;
-		$intercambio->cobrador_id = $cobrador_id;
-		$intercambio->categoria_id = $categoria_id;
-		$intercambio->horas = $horas;
-		$intercambio->descripcion = $descripcion;
-		$intercambio->save();
+		$data = array(
+				'pagador_id' => $pagador_id,
+				'cobrador_id' => $cobrador_id,
+				'categoria_id' => $categoria_id,
+				'horas' => $horas,
+				'descripcion' => $descripcion
+			);
+		$validation = Validator::make($data, Intercambio::$rules);
 
-		$pagador = User::find($pagador_id);
-		$pagador->horas -= $horas;
-		$pagador->save();
+		if ($validation->passes())
+		{
+			$intercambio = new Intercambio;
+			$intercambio->pagador_id = $pagador_id;
+			$intercambio->cobrador_id = $cobrador_id;
+			$intercambio->categoria_id = $categoria_id;
+			$intercambio->horas = $horas;
+			$intercambio->descripcion = $descripcion;
+			$intercambio->save();
 
-		$cobrador = User::find($cobrador_id);
-		$cobrador->horas += $horas;
-		$cobrador->save();
+			$pagador = User::find($pagador_id);
+			$pagador->horas -= $horas;
+			$pagador->save();
 
-        return View::make('intercambios.creado');
+			$cobrador = User::find($cobrador_id);
+			$cobrador->horas += $horas;
+			$cobrador->save();
+
+	        return View::make('intercambios.creado');
+	    }
+
+	    return Redirect::route('intercambios.create')
+	    	->withInput()
+	    	->withErrors($validation);
 	}
 
 	/**
@@ -125,7 +139,15 @@ class IntercambiosController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$intercambio = Intercambio::Find($id);
+		$intercambio->cobrador->horas -= $intercambio->horas;
+		$intercambio->cobrador->save();
+		$intercambio->pagador->horas += $intercambio->horas;
+		$intercambio->pagador->save();
+		$intercambio->destroy($id);
+
+		$intercambios = Intercambio::all();
+        return View::make('intercambios.index')->with('intercambios', $intercambios)->with('titulo_pagina', 'Todos los intercambios');
 	}
 
 }

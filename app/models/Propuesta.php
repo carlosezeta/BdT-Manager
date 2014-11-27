@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+
 class Propuesta extends Eloquent {
 	protected $guarded = array();
 
@@ -8,12 +10,22 @@ class Propuesta extends Eloquent {
 		'titulo' => 'required',
 		'descripcion' => 'required',
 		'duracion' => 'required',
-		'min_asistentes' => 'required',
-		'max_asistentes' => 'required',
 		'espacio' => 'required',
 		'material_alumnos' => 'required',
 		'material_bdt' => 'required',
 		'oyentes' => 'required',
 		'img' => 'required'
 	);
+
+	public function getCreatedAtAttribute($attr) {        
+        return Carbon::parse($attr)->format('d/m/Y');
+    }
+
+    public function getUpdatedAtAttribute($attr) {        
+        return Carbon::parse($attr)->format('d/m/Y');
+    }
+
+	public function tallerista(){
+		return $this->belongsTo('User', 'tallerista_id');
+	}
 }

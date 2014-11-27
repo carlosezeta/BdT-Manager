@@ -1,54 +1,30 @@
-@extends('layouts.scaffold')
+@extends('site.layout')
 
-@section('main')
+@section('content')
 
-<h1>All Propuestas</h1>
-
-<p>{{ link_to_route('propuestas.create', 'Add New Propuestas', null, array('class' => 'btn btn-lg btn-success')) }}</p>
+<h1>Propuestas de Talleres Pendientes</h1>
 
 @if ($propuestas->count())
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th>Tallerista_id</th>
-				<th>Titulo</th>
-				<th>Descripcion</th>
-				<th>Duracion</th>
-				<th>Min_asistentes</th>
-				<th>Max_asistentes</th>
-				<th>Espacio</th>
-				<th>Material_alumnos</th>
-				<th>Material_bdt</th>
-				<th>Oyentes</th>
-				<th>Img</th>
-				<th>&nbsp;</th>
-			</tr>
-		</thead>
+	@foreach ($propuestas as $propuesta)
+	<div class="row">
+		<h2>{{{ $propuesta->titulo }}} ({{{ $propuesta->tallerista->username }}})<span class="propuesta-fecha">{{ $propuesta->created_at }}</h2>
+		{{ HTML::image('imgs/tallers/'.$propuesta->img, $propuesta->titulo, array( 'width' => '100px' )) }}
+		{{ $propuesta->descripcion }}
+		<p><strong>Duración: </strong>{{ $propuesta->duracion }}</p>
+		<p><strong>Material Alumnos: </strong>{{ $propuesta->material_alumnos }}</p>
+		<p><strong>Material BdT: </strong>{{ $propuesta->material_bdt }}</p>
+		<p><strong>Horario Preferido: </strong>{{ $propuesta->horario }}</p>
 
-		<tbody>
-			@foreach ($propuestas as $propuestas)
-				<tr>
-					<td>{{{ $propuestas->tallerista_id }}}</td>
-					<td>{{{ $propuestas->titulo }}}</td>
-					<td>{{{ $propuestas->descripcion }}}</td>
-					<td>{{{ $propuestas->duracion }}}</td>
-					<td>{{{ $propuestas->min_asistentes }}}</td>
-					<td>{{{ $propuestas->max_asistentes }}}</td>
-					<td>{{{ $propuestas->espacio }}}</td>
-					<td>{{{ $propuestas->material_alumnos }}}</td>
-					<td>{{{ $propuestas->material_bdt }}}</td>
-					<td>{{{ $propuestas->oyentes }}}</td>
-					<td>{{{ $propuestas->img }}}</td>
-                    <td>
-                        {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('propuestas.destroy', $propuestas->id))) }}
-                            {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
-                        {{ Form::close() }}
-                        {{ link_to_route('propuestas.edit', 'Edit', array($propuestas->id), array('class' => 'btn btn-info')) }}
-                    </td>
-				</tr>
-			@endforeach
-		</tbody>
-	</table>
+        {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('propuestas.destroy', $propuesta->id))) }}
+
+        {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+
+        {{ Form::close() }}
+
+        {{ link_to_route('propuestas.edit', 'Edit', array($propuesta->id), array('class' => 'btn btn-info')) }}
+	</div>
+	@endforeach
+
 @else
 	There are no propuestas
 @endif

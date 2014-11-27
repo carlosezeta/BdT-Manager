@@ -5,7 +5,11 @@ use Carbon\Carbon;
 class Intercambio extends Eloquent {
 	protected $guarded = array();
 
-	public static $rules = array();
+	public static $rules = array(
+		'horas'=>'required|min:0',
+		'cobrador_id' => 'required',
+		'pagador_id' => 'required'
+		);
 
 	public function getCreatedAtAttribute($attr) {        
         return Carbon::parse($attr)->format('d/m/Y');

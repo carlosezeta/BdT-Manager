@@ -22,6 +22,7 @@ Route::get('demandas/ultimos-{dias}-dias', array('as' => 'demandas-ultimos-dias'
 // Rutas para Admins
 Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
     Route::resource('admin/categorias', 'AdminCategoriaController');
+    Route::get('tareas/{id}/completada', array('as' => 'tarea.completada', 'uses' => 'TareasController@completada'));
 });
 
 // Rutas para usuarios registrados
@@ -54,3 +55,5 @@ Route::resource('propuestas', 'PropuestasController');
 
 
 Route::resource('noticias', 'NoticiasController');
+
+Route::resource('tareas', 'TareasController');

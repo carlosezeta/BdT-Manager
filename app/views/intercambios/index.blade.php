@@ -23,7 +23,20 @@
 							hora)
 						@endif
 					<span class="muted">{{ HTML::link( 'intercambios/categoria/' .$intercambio->categoria->slug, $intercambio->categoria->nombre) }}</span>
-				</div><span class="fecha muted pull-right">{{ $intercambio->created_at }}</span>
+				</div>
+
+				@if (Sentry::check())
+					@if ((Sentry::getUser()->hasAccess('admin')))
+					<span class="c-controls btn-group">
+						{{ Form::open(array('method' => 'DELETE', 'route' => array('intercambios.destroy', $intercambio->id))) }}
+                        <a href="{{ URL::route('intercambios.edit', $intercambio->id) }}" class="btn btn-success"><i class="fa fa-edit"></i> Editar</a> 
+                			<button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+            			{{ Form::close() }}
+                    </span>
+                    @endif
+				@endif
+
+				<span class="fecha muted pull-right">{{ $intercambio->created_at }}</span>
 				<div class="panel-body">
 					<strong>{{ $intercambio->pagador->username}}:</strong> {{ $intercambio->descripcion }}
 				</div>

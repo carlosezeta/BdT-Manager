@@ -1,10 +1,10 @@
-@extends('layouts.scaffold')
+@extends('site.layout')
 
-@section('main')
+@section('content')
 
 <div class="row">
     <div class="col-md-10 col-md-offset-2">
-        <h1>Edit Propuestas</h1>
+        <h1>{{ Lang::get('propuestas.editar') }}</h1>
 
         @if ($errors->any())
         	<div class="alert alert-danger">
@@ -16,12 +16,12 @@
     </div>
 </div>
 
-{{ Form::model($propuestas, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('propuestas.update', $propuestas->id))) }}
+{{ Form::model($propuesta, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('propuestas.update', $propuesta->id))) }}
 
         <div class="form-group">
-            {{ Form::label('tallerista_id', 'Tallerista_id:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('tallerista_id', Lang::get('talleres.tallerista'), array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::input('number', 'tallerista_id', Input::old('tallerista_id'), array('class'=>'form-control')) }}
+              <input class="form-control" id="tallerista" placeholder="{{ $propuesta->tallerista->username }}" disabled>
             </div>
         </div>
 
@@ -89,9 +89,17 @@
         </div>
 
         <div class="form-group">
-            {{ Form::label('img', 'Img:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('img', Lang::get('talleres.imagen'), array('class'=>'col-md-2 control-label')) }}
+ 
             <div class="col-sm-10">
-              {{ Form::text('img', Input::old('img'), array('class'=>'form-control', 'placeholder'=>'Img')) }}
+                <div class="row">                  
+                    <div class="col-sm-3">
+                        {{ HTML::image('/imgs/talleres/'.$propuesta->img) }}
+                    </div>
+                    <div class="col-sm-9">
+                        {{ Form::file('img', array('class'=>'form-control')) }}
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -100,7 +108,7 @@
     <label class="col-sm-2 control-label">&nbsp;</label>
     <div class="col-sm-10">
       {{ Form::submit('Update', array('class' => 'btn btn-lg btn-primary')) }}
-      {{ link_to_route('propuestas.show', 'Cancel', $propuestas->id, array('class' => 'btn btn-lg btn-default')) }}
+      {{ link_to_route('propuestas.show', 'Cancel', $propuesta->id, array('class' => 'btn btn-lg btn-default')) }}
     </div>
 </div>
 
