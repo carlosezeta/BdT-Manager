@@ -31,6 +31,8 @@ Route::group(array('before' => 'Sentinel\auth'), function() {
 	Route::get('publicar-demanda', array('as'=>'publicar-demanda', 'uses' => 'AnunciosController@creardemanda'));
 	Route::get('socis/{id}', 'SociController@show');
 	Route::post('sociImgStore', 'SociController@imgStore');
+	Route::post('postImg', ['as'=>'post-img', 'uses' => 'SociController@postImg']);
+	Route::post('crop', ['as' => 'soci-crop', 'uses' => 'SociController@crop']);
 	Route::get('ofertas/usuario/{usuario}', array('as' => 'ofertas-usuario', 'uses' => 'AnunciosController@ofertasUsuario'));
 	Route::get('demandas/usuario/{usuario}', array('as' => 'demandas-usuario', 'uses' => 'AnunciosController@demandasUsuario'));
 

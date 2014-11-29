@@ -114,7 +114,7 @@ return array(
 	| 
 	*/
 
-	'default_user_groups' => array('Users'),
+	'default_user_groups' => array('NoSocis'),
 
 	/*
 	|--------------------------------------------------------------------------

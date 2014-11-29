@@ -18,6 +18,6 @@ return array(
 	'demandas'		=> 'Demandas',
 	'intercambios'	=> 'Intercambios',
 	'talleres'		=> 'Talleres',
-	'no-hay-nada'	=> 'No hay resultados que mostrar.'
-	
+	'no-hay-nada'	=> 'No hay resultados que mostrar.',
+	'subir'			=> 'Subir'
 );

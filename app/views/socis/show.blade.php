@@ -1,48 +1,64 @@
 @extends('site.layout')
 
+@section('styles')
+<link rel="stylesheet" href="{{ asset('css/jquery.Jcrop.min.css') }}" type="text/css" />
+<style>
+	.jcrop-keymgr { opacity: 0;}
+</style>
+@stop
+
 
 {{-- Content --}}
 @section('content')
 
 <!-- Modal Imagen -->
 <div class="modal fade" id="modal-imagen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
-        <h4 class="modal-title" id="myModalLabel">Subir imagen</h4>
-      </div>
-      <div class="modal-body">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+				<h4 class="modal-title" id="myModalLabel">Editar imagen</h4>
+			</div>
+			<div class="modal-body">
+				<h2>Subir Imagen:</h2>
+				{{ Form::open(array('route' => 'post-img', 'class' => 'form-horizontal', 'files' => true)) }}
+					<div class="form-group">
+						{{ Form::label('img', 'Imagen:', array('class'=>'col-md-2 control-label')) }}
+			            <div class="col-sm-8">
+						{{ Form::file('img', array('class'=>'form-control', 'placeholder'=>'Img')) }}
+			            </div>
+			            <div class="col-sm-2">
+			            	{{ Form::submit( Lang::get('site.subir') , array('class' => 'btn btn-block btn-primary')) }}
+			            </div>
+			        </div>
+						{{ Form::hidden('user-id', $data['user']->id, [ 'id' => 'user-id' ]) }}
 
-        {{ Form::open(array('action' => 'SociController@imgStore', 'class' => 'form-horizontal', 'files' => true)) }}
-
-        	<div class="form-group">
-	            {{ Form::label('img', 'Imagen:', array('class'=>'col-md-2 control-label')) }}
-	            <div class="col-sm-10">
-	              {{ Form::file('img', array('class'=>'form-control', 'placeholder'=>'Img')) }}
-	            </div>
-	        </div>
-
-
-			<div class="form-group">
-			    <label class="col-sm-2 control-label">&nbsp;</label>
-			    <div class="col-sm-10">
-			      {{ Form::submit( Lang::get('site.enviar') , array('class' => 'btn btn-lg btn-primary')) }}
-			    </div>
+				{{ Form::close() }}
+		@if ($data['imagen'] == null)
+			</div>
+		@else
+		<h2>Seleccione el recorte de la imagen:</h2>
+				{{ Form::open(['route' => 'soci-crop', 'onsubmit' => 'return checkCords();']) }}
+					{{ HTML::image($data['imagen'], '', ['class' => 'center-block', 'id' => 'foto-crop']) }}
+					{{ Form::hidden('img_bckp', $data['imagen'], ['id' => 'img_bckp']) }}
+					{{ Form::hidden('src', $data['imagen'], array('id' => 'src')) }}
+			        {{ Form::hidden('x', '', array('id' => 'x')) }}
+			        {{ Form::hidden('y', '', array('id' => 'y')) }}
+			        {{ Form::hidden('w', '', array('id' => 'w')) }}
+			        {{ Form::hidden('h', '', array('id' => 'h')) }}
+			        {{ Form::hidden('user-id', $data['user']->id) }}
+			        <div class="text-right">
+					{{ Form::submit( 'Aceptar Recorte' , array('class' => 'btn btn-lg btn-primary btn-recorte')) }}
+					</div>
+				{{ Form::close() }}
 			</div>
 
-		{{ Form::close() }}
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+		@endif
+		</div>
+	</div>
 </div>
 
-
+<input type="hidden" id="modal" value="{{ $data['modal'] }}"/>
 
 
 
@@ -53,7 +69,7 @@
 
 
 <ul class="nav nav-tabs show-soci">
-  <li class="active"><a href="#perfil" data-toggle="tab"><strong>{{ $user->username }}</strong></a></li>
+  <li class="active"><a href="#perfil" data-toggle="tab"><strong>{{ $data['user']->username }}</strong></a></li>
   <li><a href="#ofertas" data-toggle="tab">{{ Lang::get('site.ofertas') }}</a></li>
   <li><a href="#demandas" data-toggle="tab">{{ Lang::get('site.demandas') }}</a></li>
   <li><a href="#intercambios" data-toggle="tab">{{ Lang::get('site.intercambios') }}</a></li>
@@ -72,11 +88,14 @@
 							<button type="button" class="btn btn-primary foto-caption-btn" data-toggle="modal" data-target="#modal-imagen">Editar</button>
 
 		                </div>
-						{{ HTML::image('imgs/perfiles/male.png', '', ['class' => 'center-block img-circle img-thumbnail img-responsive']) }}
+		                @if ($data['user']->img == null)
+		                {{ HTML::image('imgs/perfiles/male.png', '', ['class' => 'center-block img-circle img-thumbnail img-responsive']) }}
+						@else
+							{{ HTML::image('imgs/perfiles/'.$data['user']->img, '', ['class' => 'center-block img-circle img-thumbnail img-responsive']) }}
+						@endif
 	          		</div>
 
 					<div class="col-sm-12 social-buttons">
-
 			          <a class="btn btn-block btn-social btn-facebook" href="">
 			            <i class="fa fa-facebook"></i> Facebook
 			          </a>
@@ -86,17 +105,15 @@
 			           <a class="btn btn-block btn-social btn-linkedin" href="">
 			            <i class="fa fa-linkedin"></i> LinkedIn
 			          </a>
-			          
-
 			        </div>
 
 	            </div>
 	            <!--/col--> 
 	            <div class="col-xs-12 col-sm-7" id="datos-perfil">
 	            	<a href="#" class="pull-right btn btn-success perfil-editar"><icon class="fa fa-edit"></icon> Editar</a>
-	              <h2>{{ $user->first_name }} {{ $user->last_name }}</h2>
+	              <h2>{{ $data['user']->first_name }} {{ $data['user']->last_name }}</h2>
 
-	              <p><strong>E-mail: </strong> {{ $user->email }} </p>
+	              <p><strong>E-mail: </strong> {{ $data['user']->email }} </p>
 	              <p><strong>Teléfono: </strong> 645 97 83 12 </p>
 	              <p><strong>Teléfono 2: </strong> 645 97 83 12 </p>
 	              <p><strong>Ciudad: </strong> Girona </p>
@@ -116,15 +133,15 @@
 							<tbody>
 								<tr>
 									<td><strong>Saldo</strong></td>
-									<td>{{ $user->horas }}</td>
+									<td>{{ $data['user']->horas }}</td>
 								</tr>
 								<tr>
 									<td><strong>Intercambios</strong></td>
-									<td>{{ $intercambios->count() }}</td>
+									<td>{{ $data['intercambios']->count() }}</td>
 								</tr>
 								<tr>
 									<td><strong>Horas intercambiadas</strong></td>
-									<td>{{ $intercambios->sum('horas') }}</td>
+									<td>{{ $data['intercambios']->sum('horas') }}</td>
 								</tr>
 								<tr>
 									<td><strong>Valoración</strong></td>
@@ -132,11 +149,11 @@
 								</tr>
 								<tr>
 									<td><strong>Último intercambio</strong></td>
-									<td>{{ $intercambios->first()->created_at }}</td>
+									<td>{{ $data['intercambios']->first()->created_at }}</td>
 								</tr>
 								<tr>
 									<td><strong>Fecha socio</strong></td>
-									<td>{{ $user->created_at }}</td>
+									<td>{{ $data['user']->created_at }}</td>
 								</tr>
 								
 							</tbody>
@@ -175,9 +192,9 @@
 
 
         <div class="tab-pane" id="ofertas">
-			@if ($ofertas->count())
+			@if ($data['ofertas']->count())
 
-				@foreach ($ofertas as $anuncio)
+				@foreach ($data['ofertas'] as $anuncio)
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1">
 						<div class="panel panel-success anuncio">
@@ -216,9 +233,9 @@
 
 
         <div class="tab-pane" id="demandas">
-			@if ($demandas->count())
+			@if ($data['demandas']->count())
 
-				@foreach ($demandas as $anuncio)
+				@foreach ($data['demandas'] as $anuncio)
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1">
 						<div class="panel panel-danger anuncio">
@@ -257,8 +274,8 @@
 
 
         <div class="tab-pane" id="intercambios">
-			@if ($intercambios->count())
-				@foreach ($intercambios as $intercambio)
+			@if ($data['intercambios']->count())
+				@foreach ($data['intercambios'] as $intercambio)
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="panel panel-{{ (($intercambio->cobrador_id == Sentry::getUser()->id) ? 'success' : 'danger') }} intercambio">
@@ -292,7 +309,16 @@
 @stop
 
 @section('scripts')
+<script src="{{ asset('js/jquery.Jcrop.min.js') }}"></script>
+
 <script type="text/javascript">
+	var modal;
+	if($('#modal').val() == 'true'){
+		modal = true;
+	}else{
+		modal = false;
+	}
+
 	$( document ).ready(function() {
 	    $("[rel='tooltip']").tooltip();    
 	 
@@ -303,7 +329,30 @@
 	        function(){
 	            $(this).find('.foto-caption').fadeOut(250); //.slideUp(205)
 	        }
-	    ); 
+	    );
+	    $('#modal-imagen').modal({show: modal});
 	});
+
+	$(function() {
+        $('#foto-crop').Jcrop({
+        	aspectRatio: 1,
+        	onChange: updateCoords,
+            onSelect: updateCoords
+        });
+    });
+
+    function updateCoords(c) {
+        $('#x').val(c.x);
+        $('#y').val(c.y);
+        $('#w').val(c.w);
+        $('#h').val(c.h);
+    };
+
+    function checkCoords(){
+    	if(parseInt($('#w').val())) return true;
+    	alert ('Debe realizar una selección');
+    	return false;
+    };
 </script>
+
 @stop

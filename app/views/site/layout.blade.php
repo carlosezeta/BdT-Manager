@@ -10,8 +10,9 @@
     <meta name="author" content="Carlos R. ezetahosting.com">
 
     <title>
-		@section('title') 
-		@show 
+		@section('title')
+            BdT Pont del Dimoni
+		@show
     </title>
 
     <!-- Bootstrap Core CSS -->
@@ -25,7 +26,7 @@
 
     <!-- Custom CSS -->
     <link href="{{ asset('css/sb-admin-2.css') }}" rel="stylesheet">
-    
+
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -50,7 +51,7 @@
     <nav class="navbar navbar-inverse navbar-static-top admin hidden-xs" role="navigation" style="margin-bottom: 0">
         <a class="navbar-brand" href="{{ URL::route('home') }}">Administración</a>
         <ul class="nav navbar-nav">
-            
+
                 <li {{ (Request::is('users*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\UserController@index') }}">Usuarios</a></li>
                 <li {{ (Request::is('groups*') ? 'class="active"' : '') }}><a href="{{ URL::action('Sentinel\GroupController@index') }}">Grupos</a></li>
                 <li {{ (Request::is('categorias*') ? 'class="active"' : '') }}><a href="{{ URL::action('CategoriaController@index') }}">Categorías</a></li>
@@ -81,7 +82,7 @@
             </div>
             <!-- /.navbar-header -->
 
-			
+
 
 
             <ul class="nav navbar-top-links navbar-right hidden-xs">
@@ -113,7 +114,7 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-        	
+
         	@include('site.sidebar')
 
 		</nav>
@@ -128,7 +129,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-{{-- 
+{{--
                         @if (Session::has('message'))
                             <div class="flash alert">
                                 <p>{{ Session::get('message') }}</p>

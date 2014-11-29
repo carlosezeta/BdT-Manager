@@ -98,6 +98,8 @@ class IntercambiosController extends BaseController {
 	    	->withErrors($validation);
 	}
 
+	public function
+
 	/**
 	 * Display the specified resource.
 	 *
