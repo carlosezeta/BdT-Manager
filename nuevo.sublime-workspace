@@ -99,136 +99,64 @@
 			"file": "app/controllers/IntercambiosController.php",
 			"settings":
 			{
-				"buffer_size": 3548,
+				"buffer_size": 3566,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/TareasController.php",
+			"file": "app/config/packages/rydurham/sentinel/config.php",
 			"settings":
 			{
-				"buffer_size": 2621,
+				"buffer_size": 4064,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/tareas/index.blade.php",
+			"file": "app/views/users/edit.blade.php",
 			"settings":
 			{
-				"buffer_size": 969,
+				"buffer_size": 4093,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/tareas/edit.blade.php",
+			"file": "vendor/rydurham/sentinel/src/controllers/UserController.php",
 			"settings":
 			{
-				"buffer_size": 1889,
+				"buffer_size": 11937,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/Tarea.php",
+			"file": "composer.json",
 			"settings":
 			{
-				"buffer_size": 302,
+				"buffer_size": 932,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/socis/show.blade.php",
+			"file": "app/views/anuncios/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 12120,
+				"buffer_size": 3672,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/conf/apache_virtual_hosts.conf",
+			"file": "app/views/site/layout.blade.php",
 			"settings":
 			{
-				"buffer_size": 480,
+				"buffer_size": 7960,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Carlos/Desktop/tapmodo-Jcrop-1902fbc/demos/tutorial3.html",
-			"settings":
-			{
-				"buffer_size": 4081,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 13677,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "nuevo.sublime-project",
-			"settings":
-			{
-				"buffer_size": 122,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/css/style.css",
-			"settings":
-			{
-				"buffer_size": 6143,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/less/sb-admin-2.less",
-			"settings":
-			{
-				"buffer_size": 7453,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/less/style.less",
-			"settings":
-			{
-				"buffer_size": 5758,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/config/packages/intervention/image/config.php",
-			"settings":
-			{
-				"buffer_size": 513,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/SociController.php",
-			"settings":
-			{
-				"buffer_size": 5610,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/routes.php",
 			"settings":
 			{
-				"buffer_size": 2633,
+				"buffer_size": 2642,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/lang/es/site.php",
-			"settings":
-			{
-				"buffer_size": 624,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -324,32 +252,39 @@
 	},
 	"file_history":
 	[
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/site.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/routes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/IntercambiosController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/TareasController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/index.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/edit.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Tarea.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/socis/show.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/conf/apache_virtual_hosts.conf",
+		"/C/Users/Carlos/Desktop/tapmodo-Jcrop-1902fbc/demos/tutorial3.html",
+		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/nuevo.sublime-project",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/style.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/less/sb-admin-2.less",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/less/style.less",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/packages/intervention/image/config.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/SociController.php",
 		"/C/PROGRA~2/EASYPH~2.1VC/data/conf/apache_virtual_hosts_2014-11-29@1417255192.conf",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/TallersController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/layout.blade.php",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/CSS.sublime-settings",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/nuevo.sublime-project",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/conf/apache_virtual_hosts.conf",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/composer.json",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/packages/intervention/image/config.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/app.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/AnunciosController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/PropuestasController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/edit.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Tarea.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/create.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/index.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/edit.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/show.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/TareasController.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/less/style.less",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/style.css",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/create.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/admincreate.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/create.blade.php",
@@ -360,17 +295,12 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/talleres.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/create.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tallers/edit.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/IntercambiosController.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/socis/show.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/User.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/SociController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Intercambio.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_25_221903_add_softdeletes_to_propuestas.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/site.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/hello.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/sidebar.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/less/sb-admin-2.less",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/index.blade.php",
 		"/C/Users/Carlos/Downloads/user-profile.htm",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/pruebas/pruebas.html",
@@ -382,7 +312,6 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_22_195706_create_noticias_table.php",
 		"/C/Users/Carlos/Downloads/variables.less",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/css/icomoon.css",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/routes.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/fullcalendar/gcal.js",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/noticias/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/noticias/show.blade.php",
@@ -450,8 +379,7 @@
 		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/CategoriasTableSeeder.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/packages/rydurham/sentinel/layouts/default.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/packages/rydurham/sentinel/config.php",
-		"/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/grid.html",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/packages/rydurham/sentinel/users/edit.blade.php"
+		"/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/grid.html"
 	],
 	"find":
 	{
@@ -602,15 +530,15 @@
 					"file": "app/controllers/IntercambiosController.php",
 					"settings":
 					{
-						"buffer_size": 3548,
+						"buffer_size": 3566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3541,
-								3541
+								2489,
+								2489
 							]
 						],
 						"settings":
@@ -620,25 +548,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1254.0,
+						"translation.y": 2958.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/TareasController.php",
+					"file": "app/config/packages/rydurham/sentinel/config.php",
 					"settings":
 					{
-						"buffer_size": 2621,
+						"buffer_size": 4064,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2532,
-								2532
+								3082,
+								3082
 							]
 						],
 						"settings":
@@ -648,32 +576,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1767.0,
+						"translation.y": 3876.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/tareas/index.blade.php",
+					"file": "app/views/users/edit.blade.php",
 					"settings":
 					{
-						"buffer_size": 969,
+						"buffer_size": 4093,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								906,
-								906
+								267,
+								267
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
 							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -683,75 +612,75 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/tareas/edit.blade.php",
+					"file": "vendor/rydurham/sentinel/src/controllers/UserController.php",
 					"settings":
 					{
-						"buffer_size": 1889,
+						"buffer_size": 11937,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1337,
-								1337
+								5630,
+								5630
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 205.0,
+						"translation.y": 6324.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "app/models/Tarea.php",
+					"file": "composer.json",
 					"settings":
 					{
-						"buffer_size": 302,
+						"buffer_size": 932,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								208,
-								208
+								210,
+								210
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 714.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/socis/show.blade.php",
+					"file": "app/views/anuncios/index.blade.php",
 					"settings":
 					{
-						"buffer_size": 12120,
+						"buffer_size": 3672,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1485,
-								1485
+								500,
+								432
 							]
 						],
 						"settings":
@@ -761,260 +690,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1413.0,
+						"translation.y": 527.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/conf/apache_virtual_hosts.conf",
+					"file": "app/views/site/layout.blade.php",
 					"settings":
 					{
-						"buffer_size": 480,
+						"buffer_size": 7960,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6479,
+								6479
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/C/Users/Carlos/Desktop/tapmodo-Jcrop-1902fbc/demos/tutorial3.html",
-					"settings":
-					{
-						"buffer_size": 4081,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1631,
-								297
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 76.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-					"settings":
-					{
-						"buffer_size": 13677,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								402,
-								402
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 131.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "nuevo.sublime-project",
-					"settings":
-					{
-						"buffer_size": 122,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "public/css/style.css",
-					"settings":
-					{
-						"buffer_size": 6143,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6140,
-								6140
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 10585.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "public/less/sb-admin-2.less",
-					"settings":
-					{
-						"buffer_size": 7453,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "public/less/style.less",
-					"settings":
-					{
-						"buffer_size": 5758,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5758,
-								5715
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 371.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "app/config/packages/intervention/image/config.php",
-					"settings":
-					{
-						"buffer_size": 513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								513,
-								513
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/controllers/SociController.php",
-					"settings":
-					{
-						"buffer_size": 5610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5370,
-								5370
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5668.0,
+						"translation.y": 5323.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1022,23 +727,23 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 15,
+					"buffer": 7,
 					"file": "app/routes.php",
 					"settings":
 					{
-						"buffer_size": 2633,
+						"buffer_size": 2642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1890,
-								1890
+								1091,
+								1091
 							]
 						],
 						"settings":
@@ -1048,35 +753,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 837.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "app/lang/es/site.php",
-					"settings":
-					{
-						"buffer_size": 624,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								462,
-								462
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1159,6 +836,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 182.0,
+	"side_bar_width": 293.0,
 	"status_bar_visible": true
 }

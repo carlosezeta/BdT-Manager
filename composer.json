@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"rydurham/sentinel": "~1.4",
+		"carlosezeta/sentinel": "~1.4",
 		"dollar/generators": "dev-master",
 		"anahkiasen/former": "dev-master",
 		"barryvdh/laravel-debugbar": "dev-master",

@@ -25,8 +25,8 @@ Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
     Route::get('tareas/{id}/completada', array('as' => 'tarea.completada', 'uses' => 'TareasController@completada'));
 });
 
-// Rutas para usuarios registrados
-Route::group(array('before' => 'Sentinel\auth'), function() {
+// Rutas para usuarios activados
+Route::group(array('before' => 'Sentinel\hasAccess:users'), function() {
 	Route::get('publicar-oferta', array('as'=>'publicar-oferta', 'uses' => 'AnunciosController@crearoferta'));
 	Route::get('publicar-demanda', array('as'=>'publicar-demanda', 'uses' => 'AnunciosController@creardemanda'));
 	Route::get('socis/{id}', 'SociController@show');

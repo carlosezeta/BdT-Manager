@@ -136,6 +136,15 @@
                             </div>
                         @endif
  --}}
+                         @if (Sentry::check())
+                            @if (! Sentry::getUser()->hasAccess('users'))
+                            <div class="alert alert-warning alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                Para tener pleno acceso a la web y poder empezar a realizar intercambios, pase a visitarnos al Centro Cívico de Santa Eugenia los martes o al Centro Cívico de Sant Narcís los jueves, de 19:00 a 20:00. Si necesita acordar la visita en otro horario, póngase en contacto con nosotros.
+                            </div>
+                            @endif
+                        @endif
+
                         @yield('content')
 
                     </div>

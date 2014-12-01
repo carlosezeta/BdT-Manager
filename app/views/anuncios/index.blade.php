@@ -23,14 +23,19 @@
 @endif
 
 <h1>{{ Lang::get('site.'.$txtanuncios) }}</h1>
-@if ($concreto)
-	<p><a href="{{ URL::route('publicar-'.$txtanuncio) }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar').' '.Lang::get('anuncios.'.$txtanuncio) }}</a></p>
-@else
-	<p>
-		<a href="{{ URL::route('publicar-oferta') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar-oferta') }}</a>
-		<a href="{{ URL::route('publicar-demanda') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar-demanda') }}</a>
-	</p>
+@if (Sentry::check())
+	@if ((Sentry::getUser()->hasAccess('users')))
+		@if ($concreto)
+			<p><a href="{{ URL::route('publicar-'.$txtanuncio) }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar').' '.Lang::get('anuncios.'.$txtanuncio) }}</a></p>
+		@else
+			<p>
+				<a href="{{ URL::route('publicar-oferta') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar-oferta') }}</a>
+				<a href="{{ URL::route('publicar-demanda') }}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> {{ Lang::get('anuncios.publicar-demanda') }}</a>
+			</p>
+		@endif
+	@endif
 @endif
+
 <p>Ver últimos: <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '3') }}">3 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '7') }}">7 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '15') }}">15 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '30') }}">30 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '60') }}">60 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '90') }}">90 días</a></p>
 @if ($anuncios->count())
 	<?php $cat_ant = $anuncios->first()->categoria_id; ?>
@@ -49,7 +54,11 @@
 		<div class="col-sm-10 col-sm-offset-1">
 			<div class="panel panel-default anuncio">
 				<div class="panel-heading c-list">
-					<span class="titulo">{{{ $anuncio->titulo }}}{{ (Sentry::check() ? (' <small>('. HTML::link('socis/'.$anuncio->user_id, $anuncio->user->username) .')</small>') : '') }}</span>
+					<span class="titulo">{{{ $anuncio->titulo }}}
+					@if (Sentry::check())
+						{{ (Sentry::getUser()->hasAccess('users') ? (' <small>('. HTML::link('socis/'.$anuncio->user_id, $anuncio->user->username) .')</small>') : '') }}
+					@endif
+					</span>
 
 					@if (Sentry::check())
 						@if ((Sentry::getUser()->hasAccess('admin')) || $anuncio->user_id == Sentry::getUser()->id)
