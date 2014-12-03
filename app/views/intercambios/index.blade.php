@@ -11,12 +11,18 @@
 @foreach ($intercambios as $intercambio)
 	<div class="row">
 		<div class="col-sm-10 col-sm-offset-1">
+			@if ($intercambio->cobrador_id == Sentry::getUser()->id)
+			<div class="panel panel-success intercambio">
+			@elseif ($intercambio->pagador_id == Sentry::getUser()->id)
+			<div class="panel panel-danger intercambio">
+			@else
 			<div class="panel panel-default intercambio">
+			@endif
 				<div class="panel-heading titulo">
-					{{ HTML::link('socis/'.$intercambio->pagador_id, $intercambio->pagador->username) }}
+					{{ HTML::image('imgs/perfiles/'.$intercambio->pagador->img,'',['width'=>'32px', 'class'=>'img-circle']) }} {{ HTML::link('socis/'.$intercambio->pagador_id, $intercambio->pagador->username) }}
 						<icon class="icon icon-busy"></icon>
 						<icon class="fa fa-long-arrow-right"></icon>
-  {{ HTML::link('socis/'.$intercambio->cobrador_id, $intercambio->cobrador->username) }} ({{ $intercambio->horas }}
+  					{{ HTML::image('imgs/perfiles/'.$intercambio->cobrador->img,'',['width'=>'32px', 'class'=>'img-circle']) }} {{ HTML::link('socis/'.$intercambio->cobrador_id, $intercambio->cobrador->username) }} ({{ $intercambio->horas }}
 						@if ($intercambio->horas > 1)
 							horas)
 						@else

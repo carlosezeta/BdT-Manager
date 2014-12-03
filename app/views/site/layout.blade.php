@@ -77,7 +77,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{ URL::route('home') }}">
-                    {{ HTML::image('imgs/logo.png', 'logo', array('class' => 'logo')) }}
+                    <p class="visible-xs">Bdt Pont del Dimoni</p>
+                    {{ HTML::image('imgs/logo.png', 'logo', array('class' => 'logo hidden-xs')) }}
                     {{ HTML::image('imgs/header.jpg', 'header', array('class' => 'header hidden-xs hidden-sm')) }}</a>
             </div>
             <!-- /.navbar-header -->

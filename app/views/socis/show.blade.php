@@ -69,7 +69,7 @@
 
 
 <ul class="nav nav-tabs show-soci">
-  <li class="active"><a href="#perfil" data-toggle="tab"><strong>{{ $data['user']->username }}</strong></a></li>
+  <li class="active"><a href="#perfil" data-toggle="tab">{{ HTML::image('imgs/perfiles/'.$data['user']->img,'',['width'=>'18px', 'class'=>'img-circle']) }} <strong>{{ $data['user']->username }}</strong></a></li>
   <li><a href="#ofertas" data-toggle="tab">{{ Lang::get('site.ofertas') }}</a></li>
   <li><a href="#demandas" data-toggle="tab">{{ Lang::get('site.demandas') }}</a></li>
   <li><a href="#intercambios" data-toggle="tab">{{ Lang::get('site.intercambios') }}</a></li>
@@ -280,10 +280,10 @@
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="panel panel-{{ (($intercambio->cobrador_id == Sentry::getUser()->id) ? 'success' : 'danger') }} intercambio">
 								<div class="panel-heading titulo">
-									{{ HTML::link('socis/'.$intercambio->pagador_id, $intercambio->pagador->username) }}
+									{{ HTML::image('imgs/perfiles/'.$intercambio->pagador->img,'',['width'=>'18px', 'class'=>'img-circle']) }} {{ HTML::link('socis/'.$intercambio->pagador_id, $intercambio->pagador->username) }}
 										<icon class="icon icon-busy"></icon>
 										<icon class="fa fa-long-arrow-right"></icon>
-				  {{ HTML::link('socis/'.$intercambio->cobrador_id, $intercambio->cobrador->username) }} ({{ $intercambio->horas }}
+				  {{ HTML::image('imgs/perfiles/'.$intercambio->cobrador->img,'',['width'=>'18px', 'class'=>'img-circle']) }} {{ HTML::link('socis/'.$intercambio->cobrador_id, $intercambio->cobrador->username) }} ({{ $intercambio->horas }}
 										@if ($intercambio->horas > 1)
 											horas)
 										@else

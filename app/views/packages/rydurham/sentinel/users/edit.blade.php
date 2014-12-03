@@ -18,8 +18,6 @@ Edit Profile
 
 Profile</h4>
 <div class="well">
-
-
 	{{ Form::open(array(
         'action' => array('Sentinel\UserController@update', $user->id), 
         'method' => 'put',
@@ -27,29 +25,21 @@ Profile</h4>
         'role' => 'form'
         )) }}
         
-        <div class="form-group {{ ($errors->has('firstName')) ? 'has-error' : '' }}" for="firstName">
-            {{ Form::label('edit_firstName', 'First Name', array('class' => 'col-sm-2 control-label')) }}
+        <div class="form-group {{ ($errors->has('first_name')) ? 'has-error' : '' }}" for="first_name">
+            {{ Form::label('edit_first_name', 'First Name', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('firstName', $user->first_name, array('class' => 'form-control', 'placeholder' => 'First Name', 'id' => 'edit_firstName'))}}
+              {{ Form::text('first_name', $user->first_name, array('class' => 'form-control', 'placeholder' => 'First Name', 'id' => 'edit_first_name'))}}
             </div>
-            {{ ($errors->has('firstName') ? $errors->first('firstName') : '') }}    			
+            {{ ($errors->has('first_name') ? $errors->first('first_name') : '') }}    			
     	</div>
 
 
-        <div class="form-group {{ ($errors->has('lastName')) ? 'has-error' : '' }}" for="lastName">
-            {{ Form::label('edit_lastName', 'Last Name', array('class' => 'col-sm-2 control-label')) }}
+        <div class="form-group {{ ($errors->has('last_name')) ? 'has-error' : '' }}" for="last_name">
+            {{ Form::label('edit_last_name', 'Last Name', array('class' => 'col-sm-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('lastName', $user->last_name, array('class' => 'form-control', 'placeholder' => 'Last Name', 'id' => 'edit_lastName'))}}
+              {{ Form::text('last_name', $user->last_name, array('class' => 'form-control', 'placeholder' => 'Last Name', 'id' => 'edit_last_name'))}}
             </div>
-            {{ ($errors->has('lastName') ? $errors->first('lastName') : '') }}                
-        </div>
-
-        <div class="form-group {{ ($errors->has('username')) ? 'has-error' : '' }}" for="username">
-            {{ Form::label('edit_username', 'Username', array('class' => 'col-sm-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::text('username', $user->username, array('class' => 'form-control', 'placeholder' => 'Username', 'id' => 'edit_username'))}}
-            </div>
-            {{ ($errors->has('username') ? $errors->first('username') : '') }}                
+            {{ ($errors->has('last_name') ? $errors->first('last_name') : '') }}                
         </div>
 
         @if (Sentry::getUser()->hasAccess('admin'))
@@ -107,9 +97,4 @@ Profile</h4>
       {{ Form::close() }}
   </div>
 
-@stop
-
-
-@section('sidebarContent')
-    <li>Hola</li>
 @stop

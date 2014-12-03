@@ -23,6 +23,8 @@ Route::get('demandas/ultimos-{dias}-dias', array('as' => 'demandas-ultimos-dias'
 Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
     Route::resource('admin/categorias', 'AdminCategoriaController');
     Route::get('tareas/{id}/completada', array('as' => 'tarea.completada', 'uses' => 'TareasController@completada'));
+    Route::get('users/activar-usuario/{id}', array('as' => 'activarUsuario', 'uses' => 'SociController@activarUsuario'));
+    Route::controller('search', 'SearchController');
 });
 
 // Rutas para usuarios activados

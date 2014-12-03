@@ -17,10 +17,7 @@
 @section('content')
   <div class="row">
     <div class="col-lg-7 col-md-12">
-    	<div id="calendar"></div>
-    </div>
 
-    <div class="col-lg-5 col-md-12">
       <h1 class="text-center">Últimas Noticias</h1>
       
       @foreach ($noticias as $noticia)
@@ -46,6 +43,12 @@
 
         <hr>
       @endforeach
+    </div>
+
+    <div class="col-lg-5 col-md-12">
+      <h1 class="text-center">Calendario</h1>
+      <div id="calendar"></div>
+
 
     </div><!-- col-md -->
   </div><!-- row -->

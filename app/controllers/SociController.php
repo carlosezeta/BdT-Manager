@@ -200,6 +200,39 @@ class SociController extends BaseController {
 		return Redirect::to('socis/'.$user->id);
 	}
 
+	public function activarUsuario($id)
+	{
+		try
+		{
+		    // Find the user using the user id
+		    $user = Sentry::findUserById($id);
 
+		    // Find the group using the group id
+		    $usersGroup = Sentry::findGroupById(1);
+		    $noSocisGroup = Sentry::findGroupById(3);
+
+		    // Assign the group to the user
+		    if ($user->addGroup($usersGroup) && $user->removeGroup($noSocisGroup))
+		    {
+		    	Session::flash('success', 'Usuario '.$user->username.' activado con éxito.');
+		    	$users = User::all();
+		        return Redirect::to('/users')->with('users', $users);
+		    }
+		    else
+		    {
+		    	Session::flash('error', 'Ha habido un problema al activar el usuario '.$user->username.'.');
+		    	$users = User::all();
+		        return Redirect::to('/users')->with('users', $users);
+		    }
+		}
+		catch (Cartalyst\Sentry\Users\UserNotFoundException $e)
+		{
+		    echo 'Usuario no encontrado.';
+		}
+		catch (Cartalyst\Sentry\Groups\GroupNotFoundException $e)
+		{
+		    echo 'Grupo no encontrado.';
+		}
+	}
 
 }

@@ -10,13 +10,12 @@ Edit Profile
 @section('content')
 
 <h4>Edita 
-@if ($user->email == Sentry::getUser()->email)
-	Tu
+@if ($user->id == Sentry::getUser()->id)
+	Tu Perfil</h4>
 @else 
-	{{ $user->email }}'s 
+	el perfil de {{ $user->username }}</h4>
 @endif 
 
-Perfil</h4>
 <div class="well">
 	{{ Form::open(array(
         'action' => array('Sentinel\UserController@update', $user->id), 
