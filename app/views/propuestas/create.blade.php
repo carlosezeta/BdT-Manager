@@ -16,7 +16,7 @@
     </div>
 </div>
 
-{{ Form::open(array('route' => 'propuestas.store', 'class' => 'form-horizontal')) }}
+{{ Form::open(array('route' => 'propuestas.store', 'class' => 'form-horizontal', 'files'=>'true')) }}
 
         <div class="form-group">
             {{ Form::label('titulo', Lang::get('talleres.titulo'), array('class'=>'col-md-2 control-label')) }}

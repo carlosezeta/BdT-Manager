@@ -35,8 +35,9 @@
 		@endif
 	@endif
 @endif
-
-<p>Ver últimos: <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '3') }}">3 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '7') }}">7 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '15') }}">15 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '30') }}">30 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '60') }}">60 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '90') }}">90 días</a></p>
+@if ($concreto)
+	<p>Ver últimos: <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '3') }}">3 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '7') }}">7 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '15') }}">15 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '30') }}">30 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '60') }}">60 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '90') }}">90 días</a></p>
+@endif
 @if ($anuncios->count())
 	<?php $cat_ant = $anuncios->first()->categoria_id; ?>
 	<div class="row">

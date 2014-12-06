@@ -57,8 +57,13 @@ Route::resource('tallers', 'TallersController');
 
 Route::resource('propuestas', 'PropuestasController');
 
-
-
 Route::resource('noticias', 'NoticiasController');
 
 Route::resource('tareas', 'TareasController');
+
+Route::get('graficas1', function(){
+	return View::make('estadisticas.flot');
+});
+Route::get('graficas2', function(){
+	return View::make('estadisticas.morris');
+});

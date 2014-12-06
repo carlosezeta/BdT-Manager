@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"View",
+				"View-make	View-make"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
 				"Redirect",
 				"Redirect-action	Redirect-action"
 			],
@@ -80,10 +88,6 @@
 				"Input-get	Input-get"
 			],
 			[
-				"View",
-				"View-make	View-make"
-			],
-			[
 				"backg",
 				"background-color"
 			],
@@ -96,26 +100,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/IntercambiosController.php",
-			"settings":
-			{
-				"buffer_size": 3566,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/config/packages/rydurham/sentinel/config.php",
-			"settings":
-			{
-				"buffer_size": 4064,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/users/edit.blade.php",
 			"settings":
 			{
-				"buffer_size": 4093,
+				"buffer_size": 4105,
 				"line_ending": "Unix"
 			}
 		},
@@ -128,58 +116,58 @@
 			}
 		},
 		{
-			"file": "composer.json",
+			"file": "app/views/intercambios/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 932,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/anuncios/index.blade.php",
-			"settings":
-			{
-				"buffer_size": 3672,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/site/layout.blade.php",
-			"settings":
-			{
-				"buffer_size": 7960,
+				"buffer_size": 2334,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/controllers/AdminCategoriaController.php",
+			"file": "/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/flot.html",
 			"settings":
 			{
-				"buffer_size": 2084,
-				"line_ending": "Windows"
+				"buffer_size": 24412,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/morris.html",
+			"settings":
+			{
+				"buffer_size": 22802,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/routes.php",
 			"settings":
 			{
-				"buffer_size": 2817,
+				"buffer_size": 2979,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/hello.blade.php",
+			"file": "app/views/estadisticas/flot.blade.php",
 			"settings":
 			{
-				"buffer_size": 2556,
-				"line_ending": "Unix"
+				"buffer_size": 5785,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/estadisticas/morris.blade.php",
+			"settings":
+			{
+				"buffer_size": 4182,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 6434,
+				"buffer_size": 6494,
 				"line_ending": "Windows"
 			}
 		},
@@ -224,19 +212,25 @@
 			}
 		},
 		{
-			"file": "public/.htaccess",
 			"settings":
 			{
-				"buffer_size": 373,
-				"line_ending": "Windows",
-				"name": "<IfModule mod_rewrite.c>"
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/.htaccess_bckp",
+			"file": "public/css/sb-admin-2.css",
 			"settings":
 			{
-				"buffer_size": 356,
+				"buffer_size": 6073,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/IntercambiosController.php",
+			"settings":
+			{
+				"buffer_size": 3550,
 				"line_ending": "Unix"
 			}
 		}
@@ -333,9 +327,17 @@
 	},
 	"file_history":
 	[
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/hello.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/AdminCategoriaController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/composer.json",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/layout.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/packages/rydurham/sentinel/config.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/IntercambiosController.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/index.blade.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/.htaccess_bckp",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/.htaccess",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/site.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/routes.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/IntercambiosController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/TareasController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/tareas/edit.blade.php",
@@ -352,13 +354,11 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/SociController.php",
 		"/C/PROGRA~2/EASYPH~2.1VC/data/conf/apache_virtual_hosts_2014-11-29@1417255192.conf",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/TallersController.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/layout.blade.php",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/CSS.sublime-settings",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Carlos/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/composer.json",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/app.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/intercambios/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/AnunciosController.php",
@@ -380,9 +380,7 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/models/Intercambio.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/propuestas/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_25_221903_add_softdeletes_to_propuestas.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/hello.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/site/sidebar.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/anuncios/index.blade.php",
 		"/C/Users/Carlos/Downloads/user-profile.htm",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/pruebas/pruebas.html",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/public/fullcalendar/demos/agenda-views.html",
@@ -448,7 +446,6 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/categorias/index.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/categorias/show.blade.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/categorias.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/controllers/AdminCategoriaController.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_13_163735_create_intercambios_table.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/lang/es/intercambios.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/bdt/app/database/migrations/2014_11_08_191420_crear_anuncios.php",
@@ -457,10 +454,7 @@
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/IntercambiosTableSeeder.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/migrations/2014_11_12_212345_create_categoria_table.php",
 		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/database/seeds/CategoriaTableSeeder.php",
-		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/CategoriasTableSeeder.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/views/packages/rydurham/sentinel/layouts/default.blade.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC9/data/localweb/projects/nuevo/app/config/packages/rydurham/sentinel/config.php",
-		"/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/grid.html"
+		"/C/PROGRA~2/EASYPH~2.1VC/data/localweb/projects/bdt - copia/app/database/seeds/CategoriasTableSeeder.php"
 	],
 	"find":
 	{
@@ -603,79 +597,23 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/IntercambiosController.php",
-					"settings":
-					{
-						"buffer_size": 3566,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2489,
-								2489
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2958.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/config/packages/rydurham/sentinel/config.php",
-					"settings":
-					{
-						"buffer_size": 4064,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3082,
-								3082
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3876.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/views/users/edit.blade.php",
 					"settings":
 					{
-						"buffer_size": 4093,
+						"buffer_size": 4105,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								267,
-								267
+								1545,
+								1545
 							]
 						],
 						"settings":
@@ -686,13 +624,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1020.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "vendor/rydurham/sentinel/src/controllers/UserController.php",
 					"settings":
 					{
@@ -703,8 +641,8 @@
 						"selection":
 						[
 							[
-								194,
-								194
+								216,
+								216
 							]
 						],
 						"settings":
@@ -714,121 +652,94 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 6.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/intercambios/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 2334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								960,
+								960
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 442.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/flot.html",
+					"settings":
+					{
+						"buffer_size": 24412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								571,
+								579
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "composer.json",
+					"file": "/C/Users/Carlos/Downloads/startbootstrap-sb-admin-2-1.0.1/morris.html",
 					"settings":
 					{
-						"buffer_size": 932,
+						"buffer_size": 22802,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								21969,
+								21969
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 714.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/anuncios/index.blade.php",
-					"settings":
-					{
-						"buffer_size": 3672,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								500,
-								432
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 527.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/site/layout.blade.php",
-					"settings":
-					{
-						"buffer_size": 7960,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6479,
-								6479
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5289.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/controllers/AdminCategoriaController.php",
-					"settings":
-					{
-						"buffer_size": 2084,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 16201.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -836,23 +747,23 @@
 			]
 		},
 		{
-			"selected": 8,
+			"selected": 2,
 			"sheets":
 			[
 				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "app/routes.php",
 					"settings":
 					{
-						"buffer_size": 2817,
+						"buffer_size": 2979,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1215,
-								1215
+								2979,
+								2979
 							]
 						],
 						"settings":
@@ -862,54 +773,79 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 1802.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "app/views/hello.blade.php",
+					"buffer": 6,
+					"file": "app/views/estadisticas/flot.blade.php",
 					"settings":
 					{
-						"buffer_size": 2556,
+						"buffer_size": 5785,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1218,
-								1218
+								5332,
+								5332
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1020.0,
+						"translation.y": 4272.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "public/css/style.css",
+					"buffer": 7,
+					"file": "app/views/estadisticas/morris.blade.php",
 					"settings":
 					{
-						"buffer_size": 6434,
+						"buffer_size": 4182,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6280,
-								6280
+								4158,
+								4158
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3060.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/css/style.css",
+					"settings":
+					{
+						"buffer_size": 6494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2956,
+								2956
 							]
 						],
 						"settings":
@@ -918,13 +854,13 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 12103.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 9,
 					"file": "app/views/packages/rydurham/sentinel/users/index.blade.php",
 					"settings":
 					{
@@ -952,7 +888,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 10,
 					"file": "app/controllers/SociController.php",
 					"settings":
 					{
@@ -980,7 +916,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 11,
 					"file": "app/controllers/SearchController.php",
 					"settings":
 					{
@@ -998,7 +934,8 @@
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1007,7 +944,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 12,
 					"file": "app/views/searchuser/index.blade.php",
 					"settings":
 					{
@@ -1026,7 +963,8 @@
 						{
 							"auto_name": "",
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1035,7 +973,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 13,
 					"file": "app/views/socis/show.blade.php",
 					"settings":
 					{
@@ -1046,8 +984,8 @@
 						"selection":
 						[
 							[
-								9923,
-								9923
+								11463,
+								11402
 							]
 						],
 						"settings":
@@ -1057,66 +995,91 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9275.0,
+						"translation.y": 13228.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"default_dir": "C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\projects\\nuevo\\app\\views\\estadisticas",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "public/css/sb-admin-2.css",
+					"settings":
+					{
+						"buffer_size": 6073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1590,
+								1590
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2652.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 16,
-					"file": "public/.htaccess",
+					"file": "app/controllers/IntercambiosController.php",
 					"settings":
 					{
-						"buffer_size": 373,
+						"buffer_size": 3550,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								123,
-								123
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<IfModule mod_rewrite.c>",
-							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "public/.htaccess_bckp",
-					"settings":
-					{
-						"buffer_size": 356,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								271,
-								271
+								2473,
+								2473
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/laravel.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1152,7 +1115,7 @@
 		"cols":
 		[
 			0.0,
-			0.17393884218,
+			0.545174244762,
 			1.0
 		],
 		"rows":

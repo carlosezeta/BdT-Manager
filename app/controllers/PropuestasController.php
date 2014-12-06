@@ -84,7 +84,7 @@ class PropuestasController extends BaseController {
 	            }
 
 	            //redirigimos con un mensaje flash
-	            return Redirect::route('propuestas.index')->with(array('confirm' => 'Taller creado correctamente'));
+	            return Redirect::route('tallers.index')->with(array('confirm' => 'Propuesta de taller enviada correctamente.'));
 	        } 
 
 

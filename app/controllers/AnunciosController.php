@@ -25,7 +25,7 @@ class AnunciosController extends BaseController {
 						   ->orderBy('titulo')
 						   ->get();
 
-		return View::make('anuncios.index', compact('anuncios'));
+		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos');
 	}
 
 	public function ofertas($dias = null)
@@ -141,8 +141,11 @@ class AnunciosController extends BaseController {
 		if ($validation->passes())
 		{
 			$this->anuncio->create($input);
-
-			return Redirect::route('anuncios.index');
+			if (Input::get('tipo') == 'O') {
+				return Redirect::action('AnunciosController@ofertas', ['dias' => 1]);
+			} else {
+				return Redirect::action('AnunciosController@demandas', ['dias' => 1]);
+			}
 		}
 
 		if (Input::get('tipo') == 'O') {
