@@ -74,26 +74,11 @@ body {
 }
 .nav-header {
   background-color: #a3c528;
+  min-height: 105px;
 }
-@media (min-width: 768px) {
-  .nav-header {
-    min-height: 113px;
-  }
+#menu {
+  margin-top: 112px;
 }
-@media (max-width: 767px) {
-  .nav-header {
-    height: 0px;
-  }
-
-}
-
-@media (min-width: 768px) {
-  #menu {
-    margin-top: 112px;
-  }
-}
-
-
 #side-menu {
   margin-top: -8px;
 }

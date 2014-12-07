@@ -96,7 +96,12 @@
         <div class="form-group">
             {{ Form::label('tallerista_id', Lang::get('talleres.tallerista'), array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::select('tallerista_id', $users, null, array('class' => 'form-control')) }}
+                <select name="tallerista_id" id="tallerista_id" class="form-control">
+                    <option selected disabled>{{ Lang::get('talleres.seleccione-tallerista') }}</option>
+                    @foreach($users as $user)
+                        <option value="{{ $user->id }}">{{ $user->username }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
 

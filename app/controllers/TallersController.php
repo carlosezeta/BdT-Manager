@@ -33,7 +33,7 @@ class TallersController extends BaseController {
 	 */
 	public function create()
 	{
-		$users = User::orderBy('username')->lists('username', 'first_name', 'id');
+		$users = User::orderBy('username')->get();
 		return View::make('tallers.create')->with('users', $users);
 	}
 
