@@ -18,7 +18,7 @@
   <div class="row">
     <div class="col-lg-7 col-md-12">
 
-      <h1 class="text-center">Últimas Noticias</h1>
+      <h1 class="text-center">{{ Lang::get('site.ultimas-noticias') }}</h1>
       
       @foreach ($noticias as $noticia)
         <h2>{{ $noticia->titulo }}</h2>

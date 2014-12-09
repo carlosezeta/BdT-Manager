@@ -1,0 +1,21 @@
+<?php 
+$I = new FunctionalTester($scenario);
+$I->am('usuario');
+$I->wantTo('publicar oferta');
+$I->amOnPage('/');
+$I->click('Acceder');
+$I->seeCurrentUrlEquals('/login');
+$I->fillField('email', 'user');
+$I->fillField('password', 'sentryuser');
+$I->click('Sign In');
+$I->see('Saldo');
+$I->click(Lang::get('site.ofertas'));
+$I->seeCurrentUrlEquals('/ofertas');
+$I->see('Ensenyament');
+$I->click('Publicar Oferta');
+$I->seeCurrentUrlEquals('/publicar-oferta');
+$I->fillField('Título', 'Prueba');
+$I->selectOption('Categoría', 'Ensenyament');
+$I->fillField('Descripción', 'Esto es una prueba');
+$I->click('Publicar');
+$I->see('Esto es una prueba');
