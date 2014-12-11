@@ -7,5 +7,6 @@ composer.lock
 .DS_Store
 Thumbs.db
 bootstrap/start.php
-
+nuevo.sublime-project
+nuevo.sublime-workspace
 tests/_output/*
