@@ -20,5 +20,6 @@ return array(
 	'talleres'			=> 'Talleres',
 	'no-hay-nada'		=> 'No hay resultados que mostrar.',
 	'subir'				=> 'Subir',
-	'ultimas-noticias'	=> 'Últimas Noticias'
+	'ultimas-noticias'	=> 'Últimas Noticias',
+	'mi-perfil'			=> 'Mi Perfil'
 );

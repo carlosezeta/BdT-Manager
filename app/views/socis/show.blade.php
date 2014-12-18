@@ -110,7 +110,9 @@
 	            </div>
 	            <!--/col--> 
 	            <div class="col-xs-12 col-sm-7" id="datos-perfil">
-	            	<a href="#" class="pull-right btn btn-success perfil-editar"><icon class="fa fa-edit"></icon> Editar</a>
+	            	@if ((Session::get('userId') == $data['user']->id) or (Sentry::getUser()->hasAccess('admin')))
+		            	<a href="#" class="pull-right btn btn-success perfil-editar"><icon class="fa fa-edit"></icon> Editar</a>
+		            @endif
 	              <h2>{{ $data['user']->first_name }} {{ $data['user']->last_name }}</h2>
 
 	              <p><strong>E-mail: </strong> {{ $data['user']->email }} </p>

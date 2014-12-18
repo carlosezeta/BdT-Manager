@@ -14,10 +14,6 @@
 // Set Home Route (needed for sydurham/Sentinel)
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@showWelcome'));
 
-Route::get('ofertas/ultimos-{dias}-dias', array('as' => 'ofertas-ultimos-dias', 'uses' => 'AnunciosController@ofertas'));
-
-Route::get('demandas/ultimos-{dias}-dias', array('as' => 'demandas-ultimos-dias', 'uses' => 'AnunciosController@demandas'));
-
 
 // Rutas para Admins
 Route::group(array('before' => 'Sentinel\inGroup:Admins'), function() {
@@ -46,12 +42,22 @@ Route::resource('categorias', 'CategoriaController');
 Route::resource('intercambios', 'IntercambiosController');
 Route::get('intercambios/categoria/{cat_slug}', 'IntercambiosController@intercambiosCat');
 
+// anuncios (ofertas)
 Route::resource('anuncios', 'AnunciosController');
-Route::get('ofertas', 'AnunciosController@ofertas');
-Route::get('ofertas/{cat_slug}', 'AnunciosController@ofertasCat');
 
+// ofertas y demandas
+Route::get('ofertas', 'AnunciosController@ofertas');
 Route::get('demandas', 'AnunciosController@demandas');
-Route::get('demandas/{cat_slug}', 'AnunciosController@demandasCat');
+
+// ofertas y demandas filtradas por días
+Route::get('ofertas/ultimos-{dias}-dias', array('as' => 'ofertas-ultimos-dias', 'uses' => 'AnunciosController@ofertas'));
+Route::get('demandas/ultimos-{dias}-dias', array('as' => 'demandas-ultimos-dias', 'uses' => 'AnunciosController@demandas'));
+
+// ofertas y demandas filtradas por categorías
+Route::get('ofertas/{cat_slug}', array('uses' => 'AnunciosController@ofertasCat'));
+Route::get('demandas/{cat_slug}', array('uses' => 'AnunciosController@demandasCat'));
+
+Route::post('ofertas-cat', array('as' => 'ofertas-cat', 'uses' => 'AnunciosController@filtraOfertasCat'));
 
 Route::resource('tallers', 'TallersController');
 

@@ -19,4 +19,10 @@ class Taller extends Eloquent {
 	{
 	    return $this->belongsTo('User', 'tallerista_id');
 	}
+
+	public function asistentes()
+	{
+		return $this->belongsToMany('User');
+	}
+
 }

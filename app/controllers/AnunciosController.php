@@ -25,7 +25,8 @@ class AnunciosController extends BaseController {
 						   ->orderBy('titulo')
 						   ->get();
 
-		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos');
+		$categorias = Categoria::All();
+		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos')->with('categorias', $categorias);
 	}
 
 	public function ofertas($dias = null)
@@ -35,8 +36,8 @@ class AnunciosController extends BaseController {
 		} else {
 			$anuncios = Anuncio::whereTipo('O')->orderBy('categoria_id')->orderBy('titulo')->get();
 		}
-
-		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos');
+		$categorias = Categoria::All();
+		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos')->with('categorias', $categorias);
 	}
 
 	public function ofertasUsuario($usuario = null)
@@ -47,7 +48,8 @@ class AnunciosController extends BaseController {
 		} else {
 			$anuncios = Anuncio::whereTipo('O')->orderBy('categoria_id')->orderBy('titulo')->get();
 		}
-		return View::make('anuncios.index')->with('anuncios', $anuncios);
+		$categorias = Categoria::All();
+		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos')->with('categorias', $categorias);
 	}
 
 	public function demandasUsuario($usuario = null)
@@ -58,7 +60,8 @@ class AnunciosController extends BaseController {
 		} else {
 			$anuncios = Anuncio::whereTipo('D')->orderBy('categoria_id')->orderBy('titulo')->get();
 		}
-		return View::make('anuncios.index')->with('anuncios', $anuncios);
+		$categorias = Categoria::All();
+		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos')->with('categorias', $categorias);
 	}
 
 	public function ofertasCat($cat_slug)
@@ -69,7 +72,20 @@ class AnunciosController extends BaseController {
 		} else {
 			$anuncios = Anuncio::whereTipo('O')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
 
-			return View::make('anuncios.index')->with('anuncios', $anuncios);
+			$categorias = Categoria::All();
+			return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos')->with('categorias', $categorias);
+		}
+	}
+
+	public function filtraOfertasCat()
+	{
+		return 'hola';
+		$catId = Input::get('cat');
+		if (empty($catId)) {
+			Redirect::to('ofertas');
+		} else {
+			$categoria = Categoria::findOrFail($catId);
+			Redirect::to('ofertas/'.$categoria->slug);
 		}
 	}
 
@@ -81,7 +97,8 @@ class AnunciosController extends BaseController {
 		} else {
 			$anuncios = Anuncio::whereTipo('D')->orderBy('categoria_id')->orderBy('titulo')->get();
 		}
-		return View::make('anuncios.index')->with('anuncios', $anuncios);
+		$categorias = Categoria::All();
+		return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos')->with('categorias', $categorias);
 	}
 
 
@@ -93,7 +110,8 @@ class AnunciosController extends BaseController {
 		} else {
 			$anuncios = Anuncio::whereTipo('D')->whereCategoriaId($cat->id)->orderBy('created_at', 'desc')->get();
 
-			return View::make('anuncios.index')->with('anuncios', $anuncios);
+			$categorias = Categoria::All();
+			return View::make('anuncios.index')->with('anuncios', $anuncios)->with('tiempo', 'Todos')->with('categorias', $categorias);
 		}
 	}
 

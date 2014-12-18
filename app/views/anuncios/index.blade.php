@@ -36,7 +36,23 @@
 	@endif
 @endif
 @if ($concreto)
+	<div class="col-sm-6">
 	<p>Ver últimos: <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '3') }}">3 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '7') }}">7 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '15') }}">15 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '30') }}">30 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '60') }}">60 días</a> / <a href="{{ URL::route(Lang::get($txtanuncios).'-ultimos-dias', '90') }}">90 días</a></p>
+	</div>
+	<div class="col-sm-6">
+		<div class="row">
+			<div class="col-sm-9">
+				<select id="{{ $txtanuncios }}-cat" name="cat" class="form-control input-sm col-sm-1">
+					@foreach ($categorias as $categoria)
+						<option value="{{ $categoria->slug }}">{{ $categoria->nombre }}</option>
+					@endforeach
+				</select>
+			</div>
+			<div class="col-sm-3">
+				<a href="" id="filtrar-{{ $txtanuncios }}" class="btn btn-block btn-success btn-sm">Filtrar</a>
+			</div>
+		</div>
+	</div>
 @endif
 @if ($anuncios->count())
 	<?php $cat_ant = $anuncios->first()->categoria_id; ?>
@@ -83,11 +99,26 @@
 	@endforeach
 	</div><!-- row -->
 
-
-
-
 @else
 	{{ Lang::get('site.no-hay-nada') }}
 @endif
 
+@stop
+
+@section('scripts')
+<script type="text/javascript">
+	$(document).ready( function ()
+	{
+		$('#ofertas-cat').change(function()
+		{
+			var action = $(this).find('option:selected').val();
+  			$("#filtrar-ofertas").attr("href", "/ofertas/" + action);
+		});
+		$('#demandas-cat').change(function()
+		{
+			var action = $(this).find('option:selected').val();
+  			$("#filtrar-demandas").attr("href", "/demandas/" + action);
+		});
+	});
+</script>
 @stop

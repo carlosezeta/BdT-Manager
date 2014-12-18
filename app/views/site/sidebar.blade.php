@@ -13,6 +13,9 @@
                             <!-- /input-group -->
                         </li>
                         <li><a href="/"><i class="fa fa-home fa-fw"></i> {{ Lang::get('site.inicio') }}</a></li>
+                        @if (Sentry::check())
+                            <li><a href="/socis/{{ Session::get('userId') }}"><i class="fa fa-user fa-fw"></i> {{ Lang::get('site.mi-perfil') }} </a></li>
+                        @endif
                         <li><a href="/ofertas"><i class="fa fa-share-alt fa-fw"></i> {{ Lang::get('site.ofertas') }}</a></li>
                         <li><a href="/demandas"><i class="fa fa-life-ring fa-fw"></i> {{ Lang::get('site.demandas') }}</a></li>
                         @if (Sentry::check())
